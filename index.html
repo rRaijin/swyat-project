@@ -9,41 +9,45 @@
             integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
             crossorigin="anonymous">
         </script>
+        <script type="text/javascript" src="./scripts/main.js"></script>
     </head>
     <body>
-        <header>
+        <div id="container">
+            <header>
+    
+            </header>
+            <div id="main">
+                <nav id="topbar">
+                    <li>
+                        <a href="about">
+                            <i class="fa fa-plus"></i> authors
+                        </a>
+                    </li>
+                    <li>
+                        <a href="link1">
+                            <i class="fa fa-plus"></i> books
+                        </a>
+                        <ul class="drop">
+                            <li>sub-item-1</li>
+                            <li>sub-item-2</li>
+                            <li>sub-item-3</li>
+                            <li>sub-item-4</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="link1">
+                            <i class="fa fa-plus"></i> posts
+                        </a>
+                    </li>
+                </nav>
 
-        </header>
-        <div id="main">
-            <nav id="main-navigation">
-                <li>
-                    <a href="home">point-1</a>
-                </li>
-                <li><a href="about">point-2</a></li>
-                <li class="test-toggle">
-                    <a href="link1">point-3</a>
-                    <ul id="submenu">
-                        <li>sub-item-1</li>
-                        <li>sub-item-2</li>
-                        <li>sub-item-3</li>
-                        <li>sub-item-4</li>
-                    </ul>
-                </li>
-                <li><a href="link1">point-4</a></li>
-                <li><a href="link1">point-5</a></li>
-                <li><a href="link1">point-6</a></li>
-            </nav>
+                <div class="layout">
+                    <!-- ТУТ ВЫПОЛНЯЕШЬ д\з ПО ДОБАВЛЕНИЮ ДИВОВ -->
+                </div>
+            </div>
+            <footer>
+    
+            </footer>
         </div>
-        <footer>
-
-        </footer>
-        
-        <script type="text/javascript">
-            $(function() {
-              $(".test-toggle").hover(function() {
-                $("#submenu").toggle("slow");
-              });
-            });
-        </script>
     </body>
 </html>
