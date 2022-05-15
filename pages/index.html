@@ -1,29 +1,23 @@
 <!DOCTYPE HTML>
 <html>
+    <head-component></head-component>
     <head>
         <meta charset="utf-8">
         <title>Swyat project</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="../styles/main.css"/>
         <script
             src="https://code.jquery.com/jquery-3.6.0.js"
             integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
             crossorigin="anonymous">
         </script>
+        <script src="../components/header.js" type="text/javascript" defer></script>
+        <script src="../components/footer.js" type="text/javascript" defer></script>
         <script type="text/javascript" src="../scripts/main.js"></script>
     </head>
     <body>
         <div id="container">
-            <header>
-               <a href="./index.html" class="logotype">
-                   LOGO
-               </a>
-               <div class="menu">
-                Main menu
-               </div>
-               <div class="auth">
-                   Auth
-               </div>
-            </header>
+            <header-component></header-component>
             <div id="main">
                 <nav id="topbar">
                     <li>
@@ -52,23 +46,24 @@
                 <div id="slide"></div>
 
                 <div class="main-content">
-                    <div class="layout1">
+                    <div class="preview-screen">
                         row first
                     </div>
-                    <div class="layout2">
+                    <div class="slider">
+                        slider
+                    </div>
+                    <div class="mosaic-block">
                         <div class="sx">1</div>
                         <div class="sx">2</div>
                         <div class="sx">3</div>
                         <div class="sx">4</div>
                     </div>
-                    <div class="layout3">
+                    <div class="new-items">
                         row three
                     </div>
                 </div>
             </div>
-            <footer>
-    
-            </footer>
+            <footer-component></footer-component>
         </div>
     </body>
 </html>
