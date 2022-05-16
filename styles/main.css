@@ -1,4 +1,8 @@
 /* GLOBAL STYLES */
+header {
+    display: flex;
+}
+
 #container {
     width: 1200px;
     margin: 0 auto;
@@ -10,13 +14,12 @@ nav, ul {
 }
 
 #main {
-    background-color:rgb(85, 81, 77);
+    background-color:rgb(223, 217, 211);
 }
 
 /*  second navigation */
 #topbar {
 	display: flex;
-    list-style: none;
 	background: #3B5D80;
 }
 
@@ -30,6 +33,8 @@ nav, ul {
 #topbar > li > a {
     text-decoration: none;
     color: white;
+    text-transform: uppercase;
+    font-weight: bold;  
 }
 
 #topbar > li:hover {
@@ -58,36 +63,38 @@ nav, ul {
     width: 25%;
 }
 
-.Menu {
+.menu {
     width: 65%;
     text-align: center;
-}
-
-.navigation {
-    display: flex; 
 }
 
 .auth {
     width: 10%;
 }
 
-li {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
 .layout {
     display: flex;
 }
 
-.layout1 {
+.preview-screen {
     width: 100%;
+    border: solid 1px black;
 }
 
-.layout2 {
+.mosaic-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: solid 1px black;
+}
+
+.mosaic-block > div {
     width: 25%;
+    border: solid 1px black;
+
 }
 
-.layout3 {
+.new-items {
     width: 100%;
+    border: solid 1px black;
 }
