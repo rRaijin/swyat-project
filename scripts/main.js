@@ -15,6 +15,5 @@ $(document).ready(function(){
 	$("#topbar > li:has(ul)").on("mouseover mouseout", function(){
         console.log('dfdf')
         $(this).find("ul").stop().slideToggle(500);
-
 	});
 });

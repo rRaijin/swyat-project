@@ -99,12 +99,12 @@ nav, ul {
 
 .preview-screen {
     width: 100%;
-    border: solid 1px black;
+    /* border: solid 1px black; */
 }
 
 .new-items {
     width: 100%;
-    border: solid 1px black;
+    /* border: solid 1px black; */
 }
 
 .book-galery {
@@ -126,8 +126,17 @@ nav, ul {
     /* border: 1px solid black; */
 }
 
+.flex {
+    display: flex;
+}
+
+.h-50 {
+    height: 50px;
+}
+
 .wdh-25 {
     width: 25%;
+    background-color: rgb(214, 153, 153);
 }
 
 .wdh-50 {
@@ -143,6 +152,165 @@ nav, ul {
 
 /* Самостоятельно подобрать шрифт, цвет текста для тега p в book-galery */
 .p-in-bg {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
     color: rgb(117, 75, 140);
+}
+
+
+
+/* ЧАСТЬ 1. TRANSITION */
+/* Основная документация: 
+    https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property
+    https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration
+    https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function
+    https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay
+
+    Запись transition в одну строку => https://developer.mozilla.org/en-US/docs/Web/CSS/transition
+*/
+
+/* 
+    linear - одна скорость
+    ease-in - ускоряется
+*/
+
+/* for example transition */
+.example {
+    font-size: 14px;
+    /* 
+        1. что меняем,
+        2. за какое время, если не указано =0
+        3. задержка, если не указана =0
+        4. временная функция перехода
+    */
+    transition: font-size 4s 2s easy-in-out;
+}
+  
+.example:hover {
+    font-size: 36px;
+}
+
+
+
+/* ЧАСТЬ 2. TRANSFORM */
+
+/* for example transform */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transforms/Using_CSS_transforms */
+.trance-container {
+    position: relative;
+    height: 183px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+}
+
+.transformed-block-1 {
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+    position: absolute;
+    left: 0;
+}
+
+.transformed-block-2 {
+    transform: rotate(270deg);
+    transform-origin: bottom right;
+    position: absolute;
+    right: 0;
+}
+
+.transformed-block-3 {
+    transform: rotate(180deg);
+    transform-origin: top;
+    position: absolute;
+    top: 0;
+}
+
+.transformed-block-4 {
+    transform: rotate(360deg);
+    transform-origin: bottom right;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+
+
+/* ЧАСТЬ 3. ANIMATION */
+/* 
+    Основная документация:
+    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
+
+*/
+@keyframes slideIn {
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }
+  
+    to {
+        margin-left: -50%;
+        width: 100%;
+    }
+}
+
+.animation-example-1 {
+    animation-duration: 5s;
+    animation-name: slideIn;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes slideInSingle {
+    from {
+        margin-top: 100%;
+        width: 100%;
+    }
+  
+    to {
+        margin-top: 20%;
+        width: 100%;
+    }
+}
+
+.animation-example-2 {
+    position: relative;
+}
+
+.animation-example-2 > div {
+    margin-top: 20%;
+    position: absolute;
+    background-color: #14a16b;
+    animation-duration: 3s;
+    animation-name: slideInSingle;
+    /* можно ставить цифру для количества повторов анимации */
+    animation-iteration-count: 1;
+    width: 100%;
+    color: aqua;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Внутри дива с классом "practice" создать 2 блока по 50%, внутри каждого выполнить по 1му заданию.
+    В первом применить transition, а во втором - анимацию 
+*/
+
+/* Самостоятельная работа 1 */
+.change-color-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.change-color {
+}
+
+.change-color:hover {
+}
+
+
+
+/* БОЛЬШАЯ САМОСТОЯТЕЛЬНАЯ РАБОТА */
+/* Внутри тега ниже воспроизвести (пока что примерно) всё содержимое со скриншота (он внутри pictures) */
+.big-practice-1 {
+
 }
