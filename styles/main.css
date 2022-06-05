@@ -143,14 +143,14 @@ nav, ul {
     width: 50%;
 }
 
-/* Установить заголовок по центру, ширина 100%. Художественная задача: цвет на твой вкус для заголовка */
+
 .book-galery > div > h3 {
   text-align: center;
   width: 100%;
   color: lightseagreen;
 }
 
-/* Самостоятельно подобрать шрифт, цвет текста для тега p в book-galery */
+
 .p-in-bg {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
@@ -302,15 +302,115 @@ nav, ul {
 }
 
 .change-color {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: color 3s linear;
 }
 
 .change-color:hover {
+    color:rgb(186, 14, 249);
 }
 
+.w-50 {
+    width: 50%;
+}
 
+.p {
+    animation-duration: 3s;
+    animation-name: slidein;
+    width: 50%;
+}
+
+.practice {
+    display: flex;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+
+      75%{
+        font-size: 150%;
+        margin-left: 25%;
+        width: 150%;
+      }
+      
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 2s, transform 2s;
+    text-align: center;
+}
+
+.square:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+    background-color: aqua;
+}
+
+.cl-tx {
+    background-color: #fff700;
+}
 
 /* БОЛЬШАЯ САМОСТОЯТЕЛЬНАЯ РАБОТА */
 /* Внутри тега ниже воспроизвести (пока что примерно) всё содержимое со скриншота (он внутри pictures) */
 .big-practice-1 {
-
+    width: 65%;
 }
+
+.background {
+    background-color: rgb(255, 255, 176);
+}
+
+.back-blue {
+    background-color: rgb(143, 246, 246);
+}
+
+.navigation {
+    float:right;
+    background-color: rgb(193, 203, 203);
+    width: 25%;
+    height: 100%;
+    padding-left:60px;
+    padding-top: 40px;
+    font-size: 15px;
+}
+
+.hooks {
+    float:right;
+}
+
+.flex {
+    display: flex;
+}
+
+.decoration {
+    text-decoration: none;
+    transition: color 0s linear;
+    color: #737373;
+}
+
+.decoration:hover {
+    color:black;
+}
+
+.pad {
+    padding-top: 25px;
+}
+
+ div .box {
+    width: 30px;
+    height: 30px;
+    border-radius: 9999px;
+    }

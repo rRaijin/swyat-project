@@ -41,8 +41,179 @@
                         </a>
                     </li>
                 </nav>
+                <div>
+                    <div class="navigation">
+                        <ul>
+                            <li>
+                                <a href="nav">
+                                    <i class="fa fa-plus">
+                                        УСТАНОВКА
+                                    </i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="nav">
+                                    <i class="fa fa-plus">
+                                        ОСНОВНЫЕ ПОНЯТИЯ
+                                    </i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="nav">
+                                    <i class="fa fa-plus">
+                                        ПРОДВИНУТЫЕ ТЕМЫ
+                                    </i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="nav">
+                                    <i class="fa fa-plus">
+                                        СПАВОЧНИК API
+                                    </i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ol>
+                            <li class="flex">
+                                <details open="">
+                                    <summary>
+                                        Hooks
+                                    </summary>
+                                    <ol>
+                                        <li>
+                                            <a class="decoration" href="hook">
+                                            Введение в хуки
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="decoration" href="hook">
+                                                Краткий обзор хуков
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="decoration" href="hook">
+                                                Использование хука состояния
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="decoration" href="hook">
+                                                Использование хука эффекта
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="decoration" href="hook">
+                                                Правило хуков
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="decoration" href="hook">
+                                                Создание пользовательских хуков
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="decoration" href="hook">
+                                                Справочник API хуков
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="decoration" href="hook">
+                                                Хуки: ответы на вопросы
+                                            </a>
+                                        </li>
+                                    </ol>
+                                </details>
+                            </li>
+                        </ol>
+                        <details class="pad" open="">
+                            <summary>
+                                ТЕСТИРОВАНИЕ
+                            </summary>
+                        </details>
+                        <details class="pad" open="">
+                            <summary>
+                                УЧАСТИЕ В ПРОЕКТЕ
+                            </summary>
+                        </details>
+                        <details class="pad" open="">
+                            <summary>
+                                FAQ
+                            </summary>
+                        </details>
+                    </div>
+                    </div>
+                </div>
                 <div class="big-practice-1">
-                    
+                    <h3>useCallback</h3>
+                    <p>const memoizedCallback = useCallback)</p>
+                    <p>() => {</p>
+                    <p>doSomething(a, b);</p>
+                    <p>},</p>
+                    <p>[a, b],</p>
+                    <p>);</p>
+                    <p>
+                        Возращает 
+                        <a href="dhh.html">
+                            мемоизированийx
+                        </a>
+                        колбэк
+                    </p>
+                    <p>Передайте встроенный колбэк и массив зависимостей.Хук
+                        <strong>
+                            <code class="cl-tx">
+                                useCallback
+                            </code>
+                        </strong>
+                        вернёт мемоизированную версию колбэка,который изменяешься только, если изменяются значение одной из зависимостей. Это полезно при передачи колбэков оптимизированным дочерним компонентам, которые полагаются на равенство ссылок для предотвращения ненужных рендеров(например, 
+                        <strong>
+                            <code class="cl-tx">
+                                shouldComponentUpdate
+                            </code>
+                        </strong>
+                        ).
+                    </p>
+                    <p>
+                        <strong>
+                            <code class="cl-tx">
+                                useCallback(fn, deps)
+                            </code>
+                        </strong>
+                        - это эквивалент
+                        <strong>
+                            <code class="cl-tx">
+                                useMemo(() = fn,deps)
+                            </code>
+                        </strong>
+                        .
+                    </p>
+                <div class="background">
+                    <h4>
+                        Примечание
+                    </h4>
+                    <p>
+                        Массив зависимостей не передаётся в качестве аргументов для колбэка.Концептуально, однако, это то что они представляют: каждое значение, использование в колбэке, должно также появиться в массиве зависимостей. В будущем достаточно продвинутый компилятор может создать этот массив автоматически 
+                    </p>
+                    <p>
+                        Мы рекомендуем использовать правило 
+                        <strong>
+                            <code class="back-blue">
+                                exhaustive-deps
+                            </code>
+                        </strong>
+                        ,входящее в наш пакет правил линтера
+                        <strong>
+                            <code class="back-blue">
+                                eslint-plugin-react-hooks
+                            </code>
+                        </strong>
+                        .Оно предупреждает,когда зависимости указаны неправильно и предлагает исправление.
+                    </p>
+                </div>
                 </div>
             </div>
             <footer-component></footer-component>
