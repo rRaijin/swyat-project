@@ -148,7 +148,7 @@ nav, ul {
     width: 100%;
 }
 
-.book-galery > div {
+/* .book-galery > div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,7 +157,7 @@ nav, ul {
     background-color: white;
     text-align: center;
     font-size: 20px;
-}
+} */
 
 .wdh-25 {
     width: 25%;
@@ -831,3 +831,25 @@ nav, ul {
 }
 
 
+.preview {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .preview {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .preview {
+        width: 25%;
+    }
+}
