@@ -29,7 +29,8 @@ nav, ul {
 }
 
 .w-20 {
-    width: 20%;
+    width: 70%;
+    display: block;
 }
 
 .w-40 {
@@ -389,6 +390,7 @@ nav, ul {
     color: #fff;
     padding: 20px;
     border-radius: 10px;
+    height: 110px;
 }
 
 .example-code > p > span {
@@ -422,7 +424,6 @@ nav, ul {
 }
 
 .test-hover {
-    border-left: 2px solid yellow;
     font-weight: bold;
     padding-left: 4px;
 }
@@ -434,11 +435,21 @@ nav, ul {
 .decoration {
     text-decoration: none;
     transition: color 0s linear;
-    color: #737373;
+    color: #525252;
 }
 
 .decoration:hover {
     color:black;
+    border-left: 4px solid rgb(0, 187, 255);
+    font-weight: bold;
+    padding-left: 4px;
+    position: relative;
+}
+
+.decoration-2:hover {
+    border-left: 4px solid rgb(0, 187, 255);
+    padding-left: 4px;
+    position: relative;
 }
 
 .pad {
@@ -454,3 +465,369 @@ nav, ul {
 
 
 /* Самостоятельная работа 2 */
+
+.big-practice-2 {
+    background-color:#e6f8ff;
+    width: 80%;
+    color: #313131;
+    height: 834px;
+}
+
+.fatty-text {
+    font-size: 30px;
+}
+
+.text-pd {
+    padding-left:190px;
+    font-size: 25px;
+    padding-top: 15px;
+}
+
+.centre {
+    padding-left: 170px;
+    margin-top:-20px;
+}
+
+.text-1 {
+    width: 25%;
+}
+
+.text-w {
+    font-size: 18px;
+    color: #000;
+    font-weight:bold;
+    margin-bottom:20px;
+    line-height: 2.5;
+}
+
+.fn-w {
+    font-weight: 600;
+    color: #000;
+}
+
+.text-2 {
+    left: 296px;
+    position: relative;
+    bottom: 228px;
+    width: 25%;
+}
+
+.text-2-1 {
+    font-size: 18px;
+    font-weight:bold;
+    color: #000;
+    display: block;
+    line-height: 2.5;
+}
+
+.color-text {
+    color: #000;
+    font-size: 18px;
+}
+
+.fn-sz-23 {
+    font-size: 23px;
+}
+
+.l-h {
+    line-height: 2.5;
+}
+
+.text-3 {
+    bottom: 195px;
+    position: relative;
+    width: 40%;
+    display: inline-block;
+}
+
+.text-3-1 {
+    width: 60%;
+    display: block
+}
+
+.panda {
+    bottom: 170px;
+    position: relative;
+    background-color: rgb(210, 232, 255);
+    width: 65%;
+    padding-top: 30px;
+    padding-left: 30px;
+    margin-left: 20px;
+}
+
+.pad-l-85 {
+    padding-left: 85px;
+}
+
+.black {
+    color: #000;
+}
+
+.bt-l {
+    bottom: 102px;
+    left: 289px ;
+    position: relative;
+}
+
+.red-fw {
+    color: red;
+    font-weight: bold;
+}
+
+.w-37 {
+    width: 32%;
+    text-align: center;
+    left: 24px;
+    position: relative;
+    bottom: 3px;
+  }
+
+
+.l {
+    left: 368px ;
+    position: relative;
+    bottom: 39px;
+    width: 28%;
+    text-align: center;
+}
+
+.pd-l-20 {
+    padding-left: 20px;
+}
+
+.w-252 {
+    width: 252px;
+}
+
+.left-site {
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+}
+
+.grass {
+    width: 30%;
+    height: 23px;
+    bottom: 680px;
+    left: 700px;
+    position: relative;
+    z-index: 1;
+}
+
+.grass-1 {
+    width: 30%;
+    height: 23px;
+    bottom: 680px;
+    left: 690px;
+    position: relative;
+    z-index: 1;
+}
+
+.grass-2 {
+    width: 30%;
+    height: 23px;
+    bottom: 680px;
+    left: 680px;
+    position: relative;
+    z-index: 1;
+}
+
+.grass-3 {
+    width: 30%;
+    height: 23px;
+    bottom: 707px;
+    left: 850px;
+    position: relative;
+    z-index: 1;
+}
+
+.panda-2 {
+    width: 80%;
+    bottom: 922px;
+    position: relative;
+    left: 780px;
+  }
+
+.grass-4 {
+    width: 30%;
+    height: 23px;
+    bottom: 707px;
+    left: 813px;
+    position: relative;
+    z-index: 1;
+}
+
+.grass-5 {
+    width: 30%;
+    height: 24px;
+    bottom: 727px;
+    left: 530px;
+    position: relative;
+}
+
+.grass-6 {
+    width: 30%;
+    height: 24px;
+    bottom: 734px;
+    left: 650px;
+    position: relative;
+    z-index: 2;
+}
+
+.grass-7 {
+    width: 30%;
+    height: 24px;
+    bottom: 734px;
+    left: 569px;
+    position: relative;
+    z-index: 2;
+}
+
+.text-4 {
+    width: 130px;
+    background-color: rgb(255, 255, 255);
+    bottom: 1079px;
+    position: relative;
+    left: 632px;
+    margin-top: -23px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+.fn-sz-18 {
+    font-size: 18px; 
+}
+
+.fn-w-2 {
+    font-weight: bold;
+} 
+
+
+.girl {
+    width: 120px;
+    bottom: 1037px;
+    left: 650px;
+    position: relative;
+    margin-top: 40px;
+}
+
+.bt-l-2 {
+    bottom: 1125px;
+    left: 650px;
+    position: relative;
+}
+
+.fn-sz-3 {
+    font-size: 10px;
+    z-index: 1;
+}
+
+.text-5 {
+    background-color: rgb(255, 255, 255);
+    font-size: 12px;
+    width: 170px;
+    bottom: 1156px;
+    position: relative;
+    left: 770px;
+    padding-top: 0px;
+    padding-bottom: 51px;
+}
+
+.photoshop {
+    background-color: rgb(64, 64, 64);
+    width: 267px;
+    height: 180px;
+    bottom: 1108px;
+    position: relative;
+    left: 674px;
+
+}
+
+.white {
+    color: #ffffff;
+}
+
+.pd-l-4 {
+    padding-left:20px;
+}
+
+.clr {
+    color: #ccc;
+    padding-left: 20px;
+}
+
+.photoshop-plagin {
+    background-color: #a3a3a3;
+    color: white;
+    z-index: 2;
+    width: 210px;
+    height: 23px;
+    position: relative;
+    left: 28px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.create {
+    background-color: rgb(210, 232, 255);
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    padding-top: 20px;
+    bottom: 1072px;
+    position: relative;
+    left: 710px;
+}
+
+.color-text-girl {
+    color: red;
+    text-align: center;
+}
+
+.advertising {
+    background-color: orange;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 140px;
+    height: 18px;
+    padding-top: 7px;
+    border-radius: 5px 0px 5px 0px;
+    bottom:  1416px;
+    position: relative;
+    left: 800px;
+    font-size: 10px;
+}
+
+.w-20-1 {
+    width: 20%;
+}
+
+.text-green {
+    color: rgb(87, 240, 143);
+}
+
+.line {
+    display: inline-block;
+    width: 740px;
+}
+
+.indent {
+    position: relative;
+    left: 10px;
+}
+
+.bottom-indent-20 {
+    bottom: 20px;
+    position: relative;
+}
+
+.bottom-indent-30 {
+    bottom: 30px;
+    position: relative;
+}
+
+.bottom-indent-40 {
+    bottom: 40px;
+    position: relative;
+}
+
+
