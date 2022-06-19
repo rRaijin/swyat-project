@@ -345,7 +345,245 @@
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="big-practice-3-1">
+                    <h3>TIMESTAMP Initialization and the NULL Attribute</h3>
+                    <p>
+                        if the 
+                        <span class="decoration-3 font black">exlicit defaulte for timestamp</span>
+                        system variable is disabled,
+                        <span class="decoration-3 font black">TIMESTAMP</span>
+                        colums by default  are , cannot contain
+                        <span class="white-black font">NOT NULL</span>
+                        , cannot contain 
+                        <span class="white-black font">NULL</span>
+                        values, and assigning 
+                        <span class="white-black font">NULL</span>
+                        assigns the current timestamp.To permit a 
+                        <span class="decoration-3 font black">TIMESTAMP</span>
+                        colomn to contain 
+                        <span class="white-black font">NULL</span>
+                        ,explicitly deslare it with the 
+                        <span class="white-black font">NULL</span>
+                        attribute.In this case,the default value also becomes 
+                        <span class="white-black font">NULL</span>
+                        unless overridden with a 
+                        <span class="white-black font">DEFAULT</span>
+                        clause that specifies a different default value. 
+                        <span class="white-black font">DEFAULT NULL</span>
+                        can be used to explicitly specifi 
+                        <span class="white-black font">NULL</span>
+                        as the default value.(For a 
+                        <span class="decoration-3 font black">TIMESTAMP</span>
+                        column not declared with the 
+                        <span class="white-black font">NULL</span>
+                        attribute,
+                        <span class="white-black font">DEFAULT NULL</span>
+                        is invalid.)
+                        if a 
+                        <span class="decoration-3 font black">TIMESTAMP</span> 
+                        column permits 
+                        <span class="white-black font">NULL</span>
+                        values, assigning
+                        <span class="white-black font">NULL</span>
+                        sets it to 
+                        <span class="white-black font">NULL,</span>
+                        not to the current timestamp.
+                     </p>
+                     <p>
+                        The following table contains several 
+                        <span class="decoration-3 font black">TIMESTAMP</span>
+                        columns that permit 
+                        <span class="white-black font">NULL</span>
+                        values:
+                     </p>
+                     <p class="create-table pad-top">
+                        <span class="white-blue pad-top">CREATE TABLE</span>
+                        <span class="black pd-l">t</span>
+                        <span class="bt-r">(</span>
+                        <span class="pd-l-15 black-white bt-r-1">ts1</span>
+                        <span class="violet bt-r-2">TIMESTAMP</span>
+                        <span class="pink bt-r-2 pd-l">NULL</span>
+                        <span class="black-blue bt-r-2 pd-l">DEFAULT</span>
+                        <span class="pink bt-r-2 pd-l">NULL</span>
+                        <span class="bt-r-2">,</span>
+                        <span class="ts2 black-white">ts2</span>
+                        <span class="ts2 violet">TIMESTAMP</span>
+                        <span class="pink ts2 pd-l">NULL</span>
+                        <span class="black-blue ts2 pd-l">DEFAULT</span>
+                        <span class="pink ts2 pd-l">0</span>
+                        <span class="ts2">,</span>
+                        <span class="ts3 black-white">ts3</span>
+                        <span class="violet bt-l-3 time3">TIMESTAMP</span>        
+                        <span class="pink pd-l null3">NULL</span>   
+                        <span class="black-blue pd-l default">DEFAULT </span>
+                        <span class="black-blue pd-l cur-time">CURRENT_TIMESTAMP</span>
+                        <span class="end1">);</span>
+                    </p>
+                    <p>
+                        A
+                        <span class="decoration-3 font black">TIMESTAMP</span>
+                        column that permits
+                        <span class="white-black font">NULL</span>
+                        value does 
+                        <span class="black">not</span>
+                        take on the current timestamp at insert time except under one of the following conditions:
+                    </p>
+                    <ul class="marker">
+                        <li>
+                            its default value is defined as 
+                            <span class=" decoration-3 font black">CURRENT_TIMESTAMP</span>
+                            and no value is spesified for the column
+                        </li>
+                    </ul>
+                    <ul class="marker">
+                        <li>
+                            <span class="decoration-3 font black">CURRENT_TIMESTAMP</span>
+                            or any of its synonyms such as 
+                            <span class="decoration-3 font black">NOW()</span>
+                            is explicitly inserted into the column 
+                        </li>
+                    </ul>
+                    <p>
+                        In other worlds, a 
+                        <span class="decoration-3 font black">TIMESTAMP</span>
+                        column defined to permit 
+                        <span class="white-black font">NULL</span>
+                        values auto-initializes only if its definition includes
+                        <span class="white-black font">DEFAULT CURRENT_TIMESTAMP:</span> 
+                    </p>
+                    <p class="create-table-2 pad-top">
+                        <span class="white-blue pad-top">CREATE TABLE</span>
+                        <span class="black pd-l">t</span>
+                        (
+                        <span class="black">ts</span>
+                        <span class="violet">TIMESTAMP</span>
+                        <span class="pink pd-l">NULL</span>
+                        <span class="black-blue pd-l">DEFAULT</span>
+                        <span class="black-blue pd-l">CURRENT_TIMESTAMP</span> 
+                        )
+                        ;
+                    </p>
+                    <p>
+                        If the 
+                        <span class="decoration-3 font black">TIMESTAMP</span>
+                        column permits
+                        <span class="white-black font">NULL</span>
+                        values but its definition does not include 
+                        <span class="white-black font">DEFAULT CURRENT_TIMESTAMP,</span> 
+                        you must explicitly insert a value corrsponding to 
+                        <span class="m-r-25">the</span> 
+                        current date and time.Suppose that tables 
+                        <span class="white-black font">t1</span>
+                        and
+                        <span class="white-black font">t2</span>
+                        have these defenitions:
+                    </p>
+                    <p class="create-table-3 pad-top">
+                        <span class="white-blue">CREATE TABLE</span>
+                        <span class="black pd-l">t1</span>
+                        (
+                        <span class="black">ts</span>
+                        <span class="violet">TIMESTAMP</span>
+                        <span class="pink pd-l">NULL</span>
+                        <span class="black-blue pd-l">DEFAULT</span>
+                        <span class="olive-green">'0000-00-00 00:00:00'</span>
+                        );
+                        <span class="pad-top-1 white-blue">CREATE TABLE</span>
+                        <span class="black pd-l pad-top-1">t2</span>
+                        <span class="pad-top-1">(</span>
+                        <span class="black pad-top-1">ts</span>
+                        <span class="violet pad-top-1">TIMESTAMP</span>
+                        <span class="pink pd-l pad-top-1">NULL</span>
+                        <span class="pad-top-1 black-blue-1 pd-l">DEFAULT</span>
+                        <span class="pad-top-1 pink pd-l">NULL</span>
+                        <span class="pad-top-1">);</span>
+                    </p>
+                    <p>
+                        To set the
+                        <span class="decoration-3 font black">TIMESTAMP</span>
+                        column in either table to the current timestamp at insert time,explicitly assign it that value.For example:
+                    </p>
+                    <p class="insert-into">
+                        <span class="white-blue pd-top-10">INSERT INTO</span>
+                        <span class="black pd-l pad-top-1 pd-top-10 pd-r20">t2</span>
+                        <span class="white-blue pd-top-10 pd-r20">VALUES</span>
+                        <span class="pd-top-10 pd-r20">(</span>
+                        <span class="black-blue pd-l pd-top-10 pd-r20">CURRENT_TIMESTAMP</span>
+                        <span class="pd-top-10 pd-r20">);</span> 
+                        <span class="pad-top-2 white-blue">INSERT INTO</span>
+                        <span class="black pd-l pad-top-2">t2</span>
+                        <span class="white-blue pad-top-2 pd-l">VALUES</span>
+                        <span class="pad-top-2">(</span>
+                        <span class="red pad-top-2">NOW</span>
+                        <span class="pad-top-2">());</span>
+                    </p>
+                </div>
+                <div class="big-practice-4">
+                    <h2 class="black">Dowload</h2>
+                    Bootstrap (currently v3.4.1) has a few easy ways to quickly get started, each one appealing to a different skill level and use case.Read through to see what suits your particular needs.
+                    <h3 class="black">Bootstrap</h3>
+                    <div class="w-25">
+                        Compiled and minified CSS, JavaScript,and fonts. No docs or original sourse files are included.
+                    </div>
+                    <h3 class="black sourse-code">Sourse Code</h3>
+                    <div class="w-25 sourse-code">
+                        Sourse Less,JavaScript and fonts files along with our docs.
+                        <span class="fn-w">Requires a Less compiler and</span>
+                        <span class="blue-w">some setup.</span>
+                    </div>
+                    <h3 class="black Sass">Sass</h3>
+                    <div class="w-25 Sass">
+                        <span class="blue">Bootstrap ported from Less to Sass</span>
+                        for easy inclusion in Rails, Compass, or Sass-only projects.
+                    </div>
+                    <button class="but" type="button">Dowload Bootstrap</button>
+                    <button class="but-2" type="button">Dowload source</button>
+                    <button class="but-3" type="button">Dowload source</button>
+                </div>
+                <div class="big-practice-5">
+                    <h2 class="black f-w">Customize the Checkout experiense</h2>
+                    <button class="but-4 grey" type="button">DOSC</button>
+                    <div class="current-3">CURRENT</div>
+                    <span class="text-6">Last updated: April 28th 2022,@ 5:51:11 pm</span>
+                    <p>
+                        <span class="bot-50">Extend your Checkout integration with these features. We recommend starting with</span>
+                        <span class="blue bot-50">showing a cancellation page</span>
+                        <span class="bot-50">and</span>
+                        <span class="blue bot-50">validating user input</span>
+                        <span class="bot-50">.</span>
+                    </p>
+                    <table class="table1">
+                        <thead>
+                            <tr class="br black">
+                                <th>
+                                    Feature 
+                                </th>
+                                <th class="black desc">
+                                    Description
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a class="dec-none pd-l20" href="html1">Support multiple shipping options</a>
+                                    <a class="text-7">Offer shipping options to your buyer.</a>
+                                    <a class="dec-none ds-in-bl text-9" href="html2">Display PayPal buttons with other payment methods</a>
+                                    <a class="text-11">Provide a clean user interface when you present PayPal and other funding sources on your site.</a>
+                                    <a class="dec-none text-12" href="html3">Authorize payment and capture funds later</a>
+                                    <a class="text-13">Change your checkout integration from a one-step payment solution to a two-step, authorize and capture later solution so you can complete business tasks, like verifying inventory, before finalizing the transaction.</a>
+                                    <a class="dec-none text-14" href="html4">Display funding source</a>
+                                    <a class="text-15">As a best practice, show your buyer the funding source they used for their purchase.</a>
+                                    <a class="text-16" href="html5">Show a cancellation page</a>
+                                    <a class="text-17">Give buyers clear confirmation when they cancel during the checkout flow.</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="wand">
+                        |
+                    </div>
+                </div>
             <footer-component></footer-component>
         </div>
     </body>

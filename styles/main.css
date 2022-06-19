@@ -72,7 +72,9 @@ nav, ul {
     color: olive;
 }
 
-
+.blue {
+    color: rgb(57, 127, 181);
+}
 
 /*  second navigation */
 #topbar {
@@ -846,13 +848,466 @@ nav, ul {
 
 /* Самостоятельная работа 3 */
 
+.big-practice-3-1 {
+    color: rgb(102, 102, 102);
+    background-color:white;
+    width: 90%;
+    padding-left:10px ;
+}
+
+.decoration-3 {
+    text-decoration: underline ;
+}
+
+.font {
+    font-family:monospace;
+}
+
+.white-black {
+    color: rgb(86, 86, 86);
+}
+
+.create-table {
+    background-color: #eeeeee;
+    padding-left: 20px;
+    width: 93%;
+    border: 1px solid #dbdbdb;
+    height: 130px;
+    left: 20px;
+    position: relative;
+}
+
+.white-blue {
+    color: rgba(0, 187, 255, 0.723);
+}
+
+.pad-top {
+    padding-top: 15px;
+}
+
+.pd-l {
+    padding-left: 5px;
+}
+
+.bt-r {
+    position: relative;
+    top: 20px;
+    right: 131px;
+}
+
+.pd-l-15 {
+    padding-left: 15px;
+}
+
+.black-white {
+    color: rgb(60, 60, 60); 
+}
+
+.bt-r-1 {
+    position: relative;
+    top: 37px;
+    right: 141px;
+}
+
+.violet {
+    color: rgb(155, 11, 180);
+}
+
+.bt-r-2 {
+    position: relative;
+    top: 37px;
+    right: 141px;
+}
+
+.pink {
+    color: rgb(164, 0, 87);
+}
+
+.black-blue {
+    color: rgb(0, 99, 142);
+}
+
+.ts2 {
+    position: relative;
+    top: 57px;
+    right: 449px;
+}
+
+.ts3 {
+    position: relative;
+    top: 74px;
+    right: 723px;
+}
+
+.ts3-1 {
+    position: relative;
+    top: 74px;
+    right: 723px;
+}
+
+.bt-l-3 {
+    position: relative;
+    top: 55px;
+    left: 39px;
+}
+
+.bt-r-3 {
+    position: relative;
+    top: 75px;
+    right: 402px;
+}
+
+
+
+.marker {
+    list-style-type: disc;
+}
+
+.current-time {
+    position: relative;
+    left: 230px;
+    bottom: 33px;
+}
+
+.l-b {
+    position: relative;
+    left: 360px;
+    bottom: 68px;
+}
+
+.create-table-2 {
+    background-color: #eeeeee;
+    padding-left: 20px;
+    width: 93%;
+    border: 1px solid #dbdbdb;
+    height: 35px;
+    left: 20px;
+    position: relative;
+}
+
+.m-r-25 {
+    margin-right: 25px;
+}
+
+.create-table-3 {
+    background-color: #eeeeee;
+    padding-left: 20px;
+    width: 93%;
+    border: 1px solid #dbdbdb;
+    height: 60px;
+    left: 20px;
+    position: relative;
+}
+
+.olive-green {
+    color: rgb(93, 151, 36);
+}
+
+.pad-top-1 {
+    position: relative;
+    top: 23px;
+    right: 549px;
+}
+.black-blue-1 {
+    color: rgb(0, 99, 142); 
+}
+
+.insert-into {
+    background-color: #eeeeee;
+    padding-left: 20px;
+    width: 93%;
+    border: 1px solid #dbdbdb;
+    height: 60px;
+    left: 20px;
+    position: relative;
+}
+
+.pd-top-10 {
+    position: relative;
+    top: 10px;
+}
+
+.pd-l-1 {
+    position: relative;
+    left: 5px;
+}
+
+.pd-r20 {
+    position: relative;
+    right: 0px;
+}
+
+.pad-top-2 {
+    position: relative;
+    top: 31px;
+    right: 394px;
+}
+
+.red {
+    color: red;
+}
+
+.time3 {
+    position: relative;
+    left: -724px;
+    top: 72px;
+}
+
+.cur-time {
+    position: relative;
+    bottom: -55px;
+    left: 264px;
+}
+
+.null3 {
+    left: -723px;
+    top: 73px;
+    position: relative;
+}
+
+.default {
+    left: -723px;
+    top: 73px;
+    position: relative;
+}
+
+.end1 {
+    position: relative;
+    top: 78px;
+    right: 180px;
+}
+
+.but {
+    width: 190px;
+    height: 50px;
+    background-color: white;
+    border-radius: 9px;
+    position: relative;
+    bottom: 220px;
+}
 
 /* Самостоятельная работа 4 */
+
+.big-practice-4 {
+    padding-left: 25px;
+    color: rgb(104, 104, 104);
+    background-color: #fff;
+    height: 265px;
+    position: relative;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.sourse-code {
+    left: 360px;
+    position: relative;
+    bottom: 115px;
+}
+
+.blue-w {
+    color: rgb(57, 127, 181);
+    font-weight: bold;
+}
+
+.Sass {
+    position: relative;
+    bottom: 229px;
+    left: 720px;
+}
+
+.but-2 {
+    width: 175px;
+    height: 50px;
+    background-color: white;
+    border-radius: 9px;
+    position: relative;
+    bottom: 220px;
+    left: 165px;
+}
+
+.but-3 {
+    width: 175px;
+    height: 50px;
+    background-color: white;
+    border-radius: 9px;
+    position: relative;
+    bottom: 220px;
+    left: 345px;
+}
 
 
 /* Самостоятельная работа 5 */
 
+.big-practice-5 {
+    padding-left: 25px;
+    background-color: #fff;
+    color: rgb(87, 87, 87);
+}
 
+.f-w {
+    font-weight: normal;
+}
+
+.but-4 {
+    width: 55px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    bottom: 15px;
+}
+
+.grey {
+    color: rgb(87, 87, 87);
+}
+
+.current-3 {
+    background-color: rgb(255, 191, 72);
+    border-radius: 4px;
+    position: relative;
+    text-align: center;
+    width: 90px;
+    height: 18px;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    bottom: 40px;
+    left: 63px;
+}
+
+.text-6 {
+    bottom: 63px;
+    left: 164px;
+    padding-left: 5px;
+    font-size: 14px;
+    position: relative;
+}
+
+.bot-50 {
+    bottom: 50px;
+    position: relative;
+}
+
+.table1 {
+    border-radius:  4px;
+    border: .0625rem solid #cbd2d6;
+    width: 87%;
+    height: 380px;
+    display: inline-block;
+}
+
+.br {
+    height: 40px;
+    padding-left: 15px;
+    width: 1002px;
+    display: inline-block;
+    padding-top: 10px;
+    background-color: rgb(232, 232, 232);
+}
+
+.wand {
+    color: grey;
+    position: relative;
+    left: 340px;
+    bottom: 276px;
+}
+
+.desc {
+    left: 280px;
+    position: relative;
+    top: 3px;
+}
+
+.dec-none {
+    text-decoration: none;
+}
+
+.text-7 {
+    position: relative;
+    padding-left: 156px;
+    top: 20px;
+}
+
+.bord-rad {
+    border-radius: 5px;
+    border: 1px;
+}
+
+.text-9 {
+    position: relative;
+    top: 50px;
+    padding-left: 10px;
+    right: 630px;
+}
+
+.text-8 {
+    position: relative;
+    right: 540px;
+    bottom: 258px;
+}
+
+.pd-l20 {
+    padding-left: 20px;
+    top: 19px;
+    position: relative;
+}
+
+.ds-in-bl {
+    display: inline-block;
+}
+
+.text-10 {
+    position: relative;
+    top: 30px;
+}
+
+.text-11 {
+    position: relative;
+    left: 400px;
+    top: 30px;
+}
+
+.text-12 {
+    top: 100px;
+    position: relative;
+    right: 590px;
+}
+
+.text-13 {
+    position: relative;
+    top: 80px;
+    display: inline-block;
+    width: 610px;
+    left: 400px;
+}
+
+.text-14 {
+    position: relative;
+    top: 130px;
+    right: 590px;
+}
+
+.text-15 {
+    top: 110px;
+    position: relative;
+    left: 399px;
+    width: 590px;
+    display: inline-block;
+}
+
+.text-16 {
+    position: relative;
+    top: 170px;
+    right: 570px;
+}
+
+.text-17 {
+    position: relative;
+    left: 400px;
+    display: inline-block;
+    top: 150px;
+}
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 800px) {
