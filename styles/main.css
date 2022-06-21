@@ -144,23 +144,6 @@ nav, ul {
     /* border: solid 1px black; */
 }
 
-.book-galery {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-/* .book-galery > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 25%;
-    background-color: white;
-    text-align: center;
-    font-size: 20px;
-} */
-
 .wdh-25 {
     width: 25%;
     background-color: rgb(214, 153, 153);
@@ -860,7 +843,7 @@ nav, ul {
 }
 
 .font {
-    font-family:monospace;
+    font-family: monospace;
 }
 
 .white-black {
@@ -1307,6 +1290,27 @@ nav, ul {
     left: 400px;
     display: inline-block;
     top: 150px;
+}
+
+
+.my-table {
+    width: 100%;
+    border: 2px solid rgb(139, 137, 137);
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+.my-table > thead > tr > th:first-child {
+    width: 35%;
+    text-align: left;
+}
+
+.my-table > thead > tr > th:last-child {
+    width: 65%;
+    border-left: 2px solid rgb(146, 142, 142);
+    text-align: left;
+    padding-left: 10px;
 }
 
 /* MEDIA QUERIES */

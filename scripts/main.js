@@ -1,4 +1,3 @@
-// 
 $(document).ready(function(){
     // Скрипт отвечающий за выпадение вложенного списка дополнительной навигации
 	$("#topbar > li:has(ul) > ul").hide().each(function(){
