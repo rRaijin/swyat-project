@@ -17,6 +17,9 @@ nav, ul {
     background-color:rgb(223, 217, 211);
 }
 
+#main2 {
+    background-color:rgb(255, 255, 255);
+}
 
 /* CUSTOM GLOBAL STYLES */
 .flex {
@@ -454,7 +457,7 @@ nav, ul {
 .big-practice-2 {
     background-color:#e6f8ff;
     width: 80%;
-    color: #313131;
+    color: #272727;
     height: 834px;
 }
 
@@ -1298,12 +1301,14 @@ nav, ul {
     border: 2px solid rgb(139, 137, 137);
     padding: 5px;
     border-radius: 5px;
-    
+    height: 340px;
 }
 
 .my-table > thead > tr > th:first-child {
     width: 35%;
     text-align: left;
+    bottom: 5px;
+    position: relative;
 }
 
 .my-table > thead > tr > th:last-child {
@@ -1311,6 +1316,703 @@ nav, ul {
     border-left: 2px solid rgb(146, 142, 142);
     text-align: left;
     padding-left: 10px;
+    height: 30px;
+    bottom: 5px;
+    position: relative;
+}
+
+
+.hei-32 {
+    height: 32px;
+}
+
+.bt-100 {
+    bottom: 100px;
+    position: relative;
+}
+
+
+.pd-t-10 {
+    padding-left: 10px;
+}
+
+.text-39 {
+    display: block;
+    width: 770%;
+    right: 631px;
+    position: relative
+}
+
+.big-practice-6 {
+    width: 65%;
+    color: rgb(51, 51, 51);
+    background-color: #ffffff;
+    padding-left: 30px;
+    height: 645px;
+}
+
+.fn-sz-30 {
+    font-size: 30px;
+}
+
+.w-450 {
+    width: 450px;
+    display: inline-block;
+}
+
+.dsbl {
+    display: block;
+}
+
+.pd-t {
+    padding-top: 35px;
+}
+
+.br-4 {
+    width: 65%;
+    border-bottom: 1px solid rgb(146, 142, 142);
+    text-align: left;
+    padding-left: 10px;
+}
+
+.fn-w-bl {
+    font-weight: bold;
+}
+
+.w-210 {
+    width: 210px;
+    display: block;
+}
+
+.mongodb-use {
+    background-color: #f5f5f5;
+    width: 67%;
+    height: 45px;
+    overflow: scroll;
+}
+
+.use > div {
+    position: relative;
+    left: 20px;
+    bottom: 12px;
+}
+
+.lh-0 {
+    line-height: 0;
+}
+
+.pd-30 {
+    padding-top: 30px;
+}
+
+.pd-t-20 {
+    padding-top: 20px;
+}
+
+.Search {
+    background-color: #ffffff;
+    border: 2px solid #d5d5d5;
+    color: rgb(113, 113, 113);
+    position: relative;
+    left: 847px;
+    width: 269px;
+    bottom: 570px;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.management-mongodb {
+    width: 30%;
+    background-color: #c6cfd8;
+    position: relative;
+    left: 850px;
+    bottom: 545px;
+    border-left: 3.5px solid orange;
+    border-right: 3.5px solid orange;
+    border-top: 3.5px solid orange;
+    height: 550.5px;
+}
+
+.management-1 {
+    padding-top: 20px;
+    position: relative;
+    right: 16px;
+    font-size: 19px;
+}
+
+.ds-flex {
+    display: flex;
+}
+
+.text-18 {
+    position: relative;
+    right: 16px;
+    top: 20px;
+    color: rgb(68, 68, 68);
+}
+
+.text-19 {
+    position: relative;
+    right: 16px;
+    color: rgb(68, 68, 68);
+    top: 25px;
+}
+
+.text-20 {
+    position: relative;
+    right: 16px;
+    color: rgb(68, 68, 68);
+    top: 28px;
+}
+
+.management-2 {
+    position: relative;
+    right: 16px;
+    color: rgb(68, 68, 68);
+    top: 32px;
+}
+
+.management-3 {
+    position: relative;
+    right: 16px;
+    color: rgb(68, 68, 68);
+    top: 36px;
+}
+
+.management-4 {
+    position: relative;
+    right: 16px;
+    color: rgb(68, 68, 68);
+    top: 40px;
+}
+
+.management-5 {
+    position: relative;
+    right: 16px;
+    color: rgb(68, 68, 68);
+    top: 44px;
+}
+
+.management-6 {
+    position: relative;
+    right: 16px;
+    color: rgb(68, 68, 68);
+    top: 48px;
+}
+
+.management-7 {
+    position: relative;
+    right: 16px;
+    color: rgb(68, 68, 68);
+    top: 52px;
+}
+
+.management-8 {
+    position: relative;
+    right: 16px;
+    color: rgb(68, 68, 68);
+    top: 56px;
+}
+
+.management-9 {
+    position: relative;
+    right: 16px;
+    color: rgb(68, 68, 68);
+    top: 60px;
+}
+
+.management-10 {
+    position: relative;
+    right: 16px;
+    color: rgb(68, 68, 68);
+    top: 64px;
+}
+
+.management-11 {
+    position: relative;
+    right: 16px;
+    color: rgb(68, 68, 68);
+    top: 68px;
+}
+
+.management-12 {
+    position: relative;
+    right: 16px;
+    color: rgb(68, 68, 68);
+    top: 72px;
+}
+
+.management-13 {
+    position: relative;
+    right: 16px;
+    color: rgb(68, 68, 68);
+    top: 76px;
+}
+
+.management-14 {
+    position: relative;
+    right: 16px;
+    color: rgb(68, 68, 68);
+    top: 80px;
+}
+
+.management-15 {
+    position: relative;
+    right: 16px;
+    color: rgb(68, 68, 68);
+    top: 84px;
+}
+
+.management-16 {
+    position: relative;
+    right: 16px;
+    color: rgb(68, 68, 68);
+    top: 88px;
+}
+
+.management-17 {
+    position: relative;
+    right: 16px;
+    color: rgb(68, 68, 68);
+    top: 92px;
+}
+
+.management-18 {
+    position: relative;
+    right: 16px;
+    color: rgb(68, 68, 68);
+    top: 96px;
+}
+
+.management-19 {
+    position: relative;
+    right: 16px;
+    color: rgb(68, 68, 68);
+    top: 100px;
+}
+
+/* Самастоятельная робота 7 */
+
+.big-practice-7 {
+    width: 80%;
+    height: 600px;
+    color: rgb(73, 73, 73);
+    padding-left: 30px;
+}
+
+.install-themes-1 {
+    background-color: rgb(236, 236, 236);
+    border-radius: 18px;
+    width: 110px;
+    height: 28px;
+    text-align: center;
+    padding-top: 7px;
+    color: #0070ff;
+    position: relative;
+    left: 80px;
+    bottom: 24px;
+  }
+
+  .install-themes-2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+  }
+
+.example-install-themes {
+    background-color: #282828;
+    height: 120px;
+    border-radius: 6px;
+    padding-left: 10px;
+  }
+
+.text-21 {
+    color: #747f9a;
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+
+.pink1 {
+    color: rgb(209, 49, 204);
+    top: 31px;
+    position: relative;
+    right: 110px;
+}
+
+.red1 {
+    color: rgb(255, 0, 0);
+    top: 31px;
+    position: relative;
+    right: 110px;
+}
+
+.orange1 {
+    color: rgb(255, 140, 0);
+    top: 31px;
+    position: relative;
+    right: 110px;
+}
+
+.text-22 {
+    color: #747f9a;
+    position: relative;
+    top: 30px;
+    left: 10px;
+  }
+
+.pink2 {
+    position: relative;
+    top: 50px;
+    color: rgb(209, 49, 204);
+    right: 132px;
+  }
+
+.red2 {
+    color: rgb(255, 0, 0);
+    top: 50px;
+    position: relative;
+    right: 132px;
+  }
+
+.orange2 {
+    color: rgb(255, 140, 0);
+    top: 50px;
+    position: relative;
+    right: 132px;
+  }
+
+.pensil {
+    width: 4%;
+    top: 40px;
+    position: relative;
+  }
+
+.text-23 {
+    color: #0070ff;
+    position: relative;
+    top: 53px;
+    right: 40px;
+  }
+
+.previous {
+    font-weight: bold;
+    border-radius: 4px;
+    width: 500px;
+    position: relative;
+    top: 100px;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+    height: 70px;
+  }
+
+.previous2 {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.text-24 {
+    color: #0070ff;
+    position: relative;
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+
+.previous3 {
+    font-weight: bold;
+    border-radius: 4px;
+    width: 500px;
+    position: relative;
+    top: 28px;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+    height: 70px;
+    left: 530px;
+  }
+
+.next {
+    padding-left: 440px;
+    padding-top: 10px;
+}
+
+.text-25 {
+    color: #0070ff;
+    position: relative;
+    padding-left: 355px;
+    padding-top: 5px;
+}
+
+/* Самостоятельная робота 8 */
+
+.big-practice-8 {
+    color: rgb(73, 73, 73);
+    width: 80%;
+    height: 840px;
+}
+
+.db-migrate {
+    overflow: scroll;
+    height: 800px;
+    width: 25%;
+}
+
+.db-migrate2 {
+    background-color: #1c61aa;
+    width: 100%;
+    height: 70px;
+}
+
+.house {
+    border-radius: 287px;
+    width: 25px;
+    padding-left: 32px;
+}
+
+.text-26 {
+    color: #ffffff;
+    padding-bottom: 512px;
+    padding-left: 60px;
+    position: relative;
+    bottom: 24px;
+}
+
+.text-27 {
+    color: #ffffff;
+    padding-left: 82px;
+    position: relative;
+    bottom: 42px;
+  }
+
+.Search2 {
+    background-color: white;
+    width: 190px;
+    padding-right: 3px;
+    position: relative;
+    right: 21px;
+    border-radius: 10px;
+    padding-left: 11px;
+    bottom: 28px;
+}
+
+.search-through {
+    background-color: rgb(53, 53, 53);
+    height: 250px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.cl-grey {
+    color: #808080;
+}
+
+.cl-greywhite {
+    color: rgb(179, 179, 179);
+}
+
+.pd-t-5 {
+    padding-top: 5px;
+}
+
+.pd-l-10 {
+    padding-left: 10px;
+}
+
+.sql-api {
+    background-color: #ffffff;
+    padding-left: 25px;
+    font-weight: bold;
+    height: 23px;
+    padding-top: 4px;
+}
+
+.bac-grey {
+    background-color: #d4d4d4;
+}
+
+.sql-api2 {
+    height: 470px;
+}
+
+.cl-gr-wh {
+    color: #707070;
+    padding-left: 30px;
+}
+
+.pd-t-15 {
+    padding-top: 15px;
+}
+
+.git-hub {
+    background-color: rgb(53, 53, 53);
+    color: #ffffff;
+    width: 240px;
+    height: 40px;
+}
+
+.git-hub-2 {
+    position: relative;
+    top: 10px;
+    left: 10px;
+} 
+
+.previous4 {
+    position: relative;
+    left: 100px;
+    bottom: 8px;
+}
+
+.next2 {
+    position: relative;
+    left: 180px;
+    bottom: 26px;
+}
+
+.docs {
+    width: 80%;
+    padding-left: 280px;
+    margin-bottom: 100px;
+    position: relative;
+    bottom: 840px;
+}
+
+.blue1 {
+    color: #7474ff;
+}
+
+.text-28 {
+    position: relative;
+    left: 45px;
+    bottom: 18px;
+}
+
+.edit {
+    position: relative;
+    left: 460px;
+    bottom: 34px;
+    color: #7474ff;
+}
+
+.br-4-1 {
+    width: 72%;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    text-align: left;
+    padding-left: 10px;
+}
+
+.migrations-api-sql {
+    width: 80%;
+    padding-left: 280px;
+    margin-bottom: 300px;
+    position: relative;
+    bottom: 912px;
+}
+
+.text-29 {
+    font-weight: 600;
+}
+
+.r-19 {
+    position: relative;
+    right: 19px;
+}
+
+.examples3 {
+    background-color: #f0f0f0;
+    width: 570px;
+    height: 262px;
+    font-size: 13px;
+    border: 2px solid #d4d4d4;
+}
+
+.pl-6 {
+    padding-left: 6px;
+}
+
+.cl-grey1 {
+    color: #ababab;
+    font-style: italic;
+}
+
+.text-30 {
+    padding-left: 15px;
+}
+
+.text-31 {
+    padding-left: 31px;
+}
+
+.aqua {
+    color: #45bdcf;
+}
+
+.text-32 {
+    padding-left: 47px;
+}
+
+.text-33 {
+    color: #000;
+    font-size: 18px;
+}
+
+.pd-t-30  {
+    padding-top: 30px;
+}
+
+.pd-t-8 {
+    padding-top: 8px;
+}
+
+.td-1-320w {
+    width: 288%;
+    display: block;
+    top: 30px;
+    position: relative;
+}
+
+.pd-l-140 {
+    padding-left: 140px;
+}
+
+.text-34 {
+    border-top: 2px solid rgb(139, 137, 137);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.text-35 {
+    border-top: 2px solid rgb(139, 137, 137);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.text-36 {
+    display: block;
+    width: 400px;
+    position: relative;
+    left: 360px;
+    bottom: 20px;
+}
+
+.pd-l-208 {
+    padding-left: 208px;
+}
+
+.pd-l-100 {
+    padding-left: 20px;
+}
+
+.t-10 {
+    position: relative;
+    top: 10px;
+}
+
+.pd-l-194 {
+    padding-left: 194px;
 }
 
 /* MEDIA QUERIES */
