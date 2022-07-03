@@ -1,3 +1,13 @@
 Воссоздать скриншот homework-5.png.
 
 1. Повторим таблицы.
+                                    <a class="dec-none pd-l20" href="html1">Support multiple shipping options</a>
+                                    <a class="text-7">Offer shipping options to your buyer.</a>
+                                    <a class="dec-none ds-in-bl text-9" href="html2">Display PayPal buttons with other payment methods</a>
+                                    <a class="text-11">Provide a clean user interface when you present PayPal and other funding sources on your site.</a>
+                                    <a class="dec-none text-12" href="html3">Authorize payment and capture funds later</a>
+                                    <a class="text-13">Change your checkout integration from a one-step payment solution to a two-step, authorize and capture later solution so you can complete business tasks, like verifying inventory, before finalizing the transaction.</a>
+                                    <a class="dec-none text-14" href="html4">Display funding source</a>
+                                    <a class="text-15">As a best practice, show your buyer the funding source they used for their purchase.</a>
+                                    <a class="text-16" href="html5">Show a cancellation page</a>
+                                    <a class="text-17">Give buyers clear confirmation when they cancel during the checkout flow.</a>
