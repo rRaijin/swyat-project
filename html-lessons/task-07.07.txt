@@ -1,0 +1,9 @@
+1. Повторить формы
+    Теория:
+        FORM - https://www.w3schools.com/html/html_forms.asp
+        INPUT - https://www.w3schools.com/tags/tag_input.asp
+        TEXTAREA - https://www.w3schools.com/tags/tag_textarea.asp
+    Задание: homework-07-07-form.png
+2. Логическое деление страницы. (перед выполнением, напишешь мне - короткий звонок, скажешь как ты бы "разбил" верстку)
+    Задание: homework-07-07.png
+3. css-reset (Я добавил в начале main.css)

@@ -1,0 +1,1014 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Swyat project</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../styles/main.css"/>
+        
+    </head>
+    <body>
+        <div id="container">
+            <header-component></header-component>
+            <div id="main2">
+                <nav id="topbar">
+                    <li>
+                        <a href="./authors.html">
+                            <i class="fa fa-plus"></i> authors
+                        </a>
+                    </li>
+                    <li>
+                        <a href="link1">
+                            <i class="fa fa-plus"></i> books
+                        </a>
+                        <ul class="drop">
+                            <li>sub-item-1</li>
+                            <li>sub-item-2</li>
+                            <li>sub-item-3</li>
+                            <li>sub-item-4</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="link1">
+                            <i class="fa fa-plus"></i> posts
+                        </a>
+                    </li>
+                </nav>
+                
+                <div class="big-practice-1">
+                    <!-- Основной контент Д\З -->
+                    <div class="practice-1-main-content">
+                        <h3>useCallback</h3>
+                        <div class="example-code">
+                            <p>
+                                <span class="text-red bottom-indent-20">const</span>
+                                <span class="bottom-indent-20">memoizedCallback =</span>
+                                <span class="text-blue bottom-indent-20">useCallback</span>
+                                <span class="text-olive bottom-indent-20">(</span>
+                            </p>
+                            <p>
+                                <span class="text-olive bottom-indent-30">()</span>
+                                <span class="bottom-indent-30">=></span>
+                                <span class="text-olive bottom-indent-30">{</span>
+                            </p>
+                            <span class="text-blue indent bottom-indent-40">doSomething</span>
+                            <span class="text-green indent bottom-indent-40">(</span>
+                            <span class="indent bottom-indent-40">a</span>
+                            <span class="text-green indent bottom-indent-40">,</span>
+                            <span class="indent bottom-indent-40">b</span>
+                            <span class="text-green indent bottom-indent-40">);</span>
+                            <span class="text-green line bottom-indent-40">},</span>
+                            <span class="text-green bottom-indent-40">[</span>
+                            <span class="bottom-indent-40">a</span>
+                            <span class="text-green bottom-indent-40">,</span>
+                            <span class="bottom-indent-40">b</span>
+                            <span class="text-green bottom-indent-40">],</span>
+                            <span class="text-green line bottom-indent-40">);</span>
+                        </div>
+                        <div class="ml-5">
+                            <p>
+                                Возращает 
+                                <span class="test-2">мемоизирований</span>
+                                колбэк
+                            </p>
+                            <p>Передайте встроенный колбэк и массив зависимостей.Хук
+                                <strong>
+                                    <code class="cl-tx">
+                                        useCallback
+                                    </code>
+                                </strong>
+                                вернёт мемоизированную версию колбэка,который изменяешься только, если изменяются значение одной из зависимостей. Это полезно при передачи колбэков оптимизированным дочерним компонентам, которые полагаются на равенство ссылок для предотвращения ненужных рендеров(например, 
+                                <strong>
+                                    <code class="cl-tx">
+                                        shouldComponentUpdate
+                                    </code>
+                                </strong>
+                                ).
+                            </p>
+                            <p>
+                                <strong>
+                                    <code class="cl-tx">
+                                        useCallback(fn, deps)
+                                    </code>
+                                </strong>
+                                - это эквивалент
+                                <strong>
+                                    <code class="cl-tx">
+                                        useMemo(() = fn,deps)
+                                    </code>
+                                </strong>
+                                .
+                            </p>
+                        </div>
+                        <div class="test-3">
+                            <h4>
+                                Примечание
+                            </h4>
+                            <p>
+                                Массив зависимостей не передаётся в качестве аргументов для колбэка.Концептуально, однако, это то что они представляют: каждое значение, использование в колбэке, должно также появиться в массиве зависимостей. В будущем достаточно продвинутый компилятор может создать этот массив автоматически 
+                            </p>
+                            <p>
+                                Мы рекомендуем использовать правило 
+                                <strong>
+                                    <code class="back-blue">
+                                        exhaustive-deps
+                                    </code>
+                                </strong>
+                                ,входящее в наш пакет правил линтера
+                                <strong>
+                                    <code class="back-blue">
+                                        eslint-plugin-react-hooks
+                                    </code>
+                                </strong>
+                                .Оно предупреждает,когда зависимости указаны неправильно и предлагает исправление.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Домашнее задание навигация справа -->
+                    <div class="practice-1-navigation">
+                        <ul class="navigation">
+                            <ul>
+                                <li>
+                                    <details>
+                                        <summary>
+                                            УСТАНОВКА
+                                        </summary>
+                                    </details>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <details>
+                                        <summary>
+                                            ОСНОВНЫЕ ПОНЯТИЯ
+                                        </summary>
+                                    </details>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <details>
+                                        <summary>
+                                            ПРОДВИНУТЫЕ ТЕМЫ
+                                        </summary>
+                                    </details>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <details>
+                                        <summary>
+                                            СПАВОЧНИК API
+                                        </summary>
+                                    </details>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="flex">
+                                    <details open="">
+                                        <summary>
+                                            Hooks
+                                        </summary>
+                                        <ul>
+                                            <li class="test-hover">
+                                                <a class="decoration decoration-2" href="hook">
+                                                    1. Введение в хуки
+                                                </a>
+                                            </li>
+                                            <li class="test-hover">
+                                                <a class="decoration decoration-2" href="hook">
+                                                   2.  Краткий обзор хуков
+                                                </a>
+                                            </li>
+                                            <li class="test-hover">
+                                                <a class="decoration decoration-2" href="hook">
+                                                   3.  Использование хука состояния
+                                                </a>
+                                            </li>
+                                            <li  class="test-hover">
+                                                <a class="decoration decoration-2" href="hook">
+                                                   4.  Использование хука эффекта
+                                                </a>
+                                            </li>
+                                            <li class="test-hover">
+                                                <a class="decoration decoration-2" href="hook">
+                                                   5.  Правило хуков
+                                                </a>
+                                            </li>
+                                            <li class="test-hover">
+                                                <a class="decoration decoration-2" href="hook">
+                                                   6.  Создание пользовательских хуков
+                                                </a>
+                                            </li>
+                                            <li class="test-hover">
+                                                <a class="decoration font-bold decoration-2" href="hook">
+                                                   7.  Справочник API хуков
+                                                </a>
+                                            </li>
+                                            <li class="test-hover">
+                                                <a class="decoration decoration-2" href="hook">
+                                                   8.  Хуки: ответы на вопросы
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </details>
+                                </li>
+                            </ul>
+                            <details class="pad" open="">
+                                <summary>
+                                    ТЕСТИРОВАНИЕ
+                                </summary>
+                            </details>
+                            <details class="pad" open="">
+                                <summary>
+                                    УЧАСТИЕ В ПРОЕКТЕ
+                                </summary>
+                            </details>
+                            <details class="pad" open="">
+                                <summary>
+                                    FAQ
+                                </summary>
+                            </details>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="big-practice-2">
+                    <p class="text-pd">
+                        Smart
+                        <span class="fatty-text">WebP, PNG</span>
+                        and 
+                        <span class="fatty-text">JPEG</span>
+                        compression
+                    </p>
+                    <p class="centre">
+                        More than 1 billion WebP, PNG and JPEG images optimized and still counting!
+                    </p>
+                    <p class="text-1 pd-l-20">
+                        <span class="text-w">What does TinyPNG do?</span>
+
+                        TinyPNG uses smart lossy compression technique to 
+
+                        <span class="fn-w">reduce the file size</span>
+
+                        of your WEBP, JPEG and PNG files. By selectively decreasing the number of colors in the image, fewer bytes are required to store the data. The effects is nearly invisible but it makes a very large difference in file size! 
+                    </p>
+                    <p class="text-2">
+                        <span class="text-2-1">Why should l use TinyPNG?</span>
+                        
+                        PNG is useful because it’s the only widely supported format that can store partially 
+
+                        <span class="fn-w">transparent images</span>
+
+                        .The format uses compression, but the files can still be large. Use TinyPNG to shrink images for your apps and sites. It will use less bandwidth and 
+
+                        <span class="fn-w">load faster</span>
+                        .
+                    </p>
+                    <p class="text-3 text-3-1">
+                        <span class="fn-sz-23 l-h text-3-1 pd-l-20">Can anyone tell the difference?</span>
+                        <span class="fn-w pd-l-20">Panda says:</span>
+                        <span>Excellent question! Let me give you a side by side comparison.Below</span>
+                        <span class="pd-l-20">are two photos of my cousin. The left image is saved as 24-bit PNG directly from </span>
+                        <span class="pd-l-20">Below Photoshop. On the right is the same image processed by TinyPNG.</span>
+                        <span class="fn-w">Spot</span>
+                        <span class="fn-w pd-l-20">any difference?</span>
+                    </p>
+                    <div class="panda">
+                        <img class="w-252" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWFRUYGBgYGhgYGhgYGBgYGBgZGBgZGRwaGBgcIS4lHCErIRkaJjgmKy8xNTU1GiU7QDszPy40NTEBDAwMEA8QHxISHjQrISs0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ1NDQ0NDQ0NP/AABEIALcBFAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAAIDBQYBBwj/xAA8EAACAQIEBAMHAwIFAwUAAAABAgADEQQSITEFQVFhInGBBhMykaGxwULR8FLhFGJygvEVM5IHFkOywv/EABoBAAMBAQEBAAAAAAAAAAAAAAABAgMEBQb/xAAkEQACAgICAgMBAAMAAAAAAAAAAQIRAyESMQRBEyJRMhRhsf/aAAwDAQACEQMRAD8A9inY0GdvKEdnY3NFmiAdFIjUnGrCOmFolJg2Iq2EiqYodZX4mvpvLjAiUiu4hiLmAe8jsSbmcSnOlJUcUm2ySiCTLagloDh1tLGkpMlmsEdqWldiVl7TwnWdfBLM+SRbg2ZGolpxJc47DAAynYWl9nPKPFhdNpIakA97ac97J4sSkFVGvB2WdR7yTLBOg7ByI6mtzJPdyalRtLclQJHfd6QHEvaWT7SsxWpmWmxyQJ73WSB5CwjqbRtGY8NEzx2WNZYgI2eM97OVDIGMOIwlapvC0eAUIcg0meSKGJzOZojIqhtFERPFB885HTGeg08WLbzrYoTMUMQ20LFea8DqWQtKmPAkbcR6SixNa8jStHwIeVl0cUx5wevim6wX/FC0Gq17ylEmUyRsU3WNfFE84IzRoaWomfJhAbWTqYCGkimNgmXGFlvh1EzdCvaWtLGaTOSN4SRce8Ag1fGqOcrMViriVjPrM1Ec8taQdjMXm22lTVeTO0HZJojCUmyEmPUSx4Zwwubm1gRcHmOxl+uEpopso6/LWTLIl0aQwylt6MoqEbgjzElpVQdjeYv2m9vHaoy0bBAbA9bEEH6Sg4X7W1qRHwuua5DDfbS/83mUpNmnwL9PW0MmLC0G9jeOUMYp8FnXVge5+00tTAU20tblFbYfC0ZqrUgFd5Z8X4eaeoNweW585SveVFHPNOLpkLNErWjGaNLzajMLSpHmV61NYStaQ4ghtRYwpJy140wsY1BaEB4Iz2nDVilGwCi8gqPGK847SVGgOZopFmil0BrHpgSCo1o04q8grVZorNHJDKlSRhpE76xytNKMrJrxEyIvErwoBxEbJAZwwsBLJQZBmjg8GgsmzSanWIkCyVRIdIpMezkzgUxyCT5ZJSVgTGRviUDBC1mawAGp1NpFxnHpSUsd+Q/MzPs/iamJxQFixHNbgKL7kgGw85nOVaRvhxW7l0erYAZUVb3tsTv5XjeLYlURgfiZWAHmCNukMw1EU1A3PMyvx1IPvMXo60fO+NwzoxDqQQTeCgT27iPsxRqXzDU8/wCeUyWK/wDT9AfDUceYB5/tDkJx/A7/ANHMKwetVI8OVUB6sTmPyFvnPVHPOZT2Xwww9NaS7Lz0uSdye5mlVriCY6odiVLoQBuO35mOrUrEjoeU19JtwQD5zM8TIFRrCw6fwyos5vIjqypxNGAtLSswMr6i6zpizjZGojrxSN3jETpUjy8DUxxMloB7vOAyOPUQoY4TmaPAnCskBuWKdigBYloxnjWaNE3QmK8cDHKkd7uOwGTscEiKQsBK0kvI8hnREAmiScYx1MRgEII4vFGNMXtjJVqRPibCQwTiFQqjEcgeZH1G0HpWXC20jN8dxT1qi0ksxLZRrsTv6egnp3sxwGnhKQAALkDO/Mnp5Tzf2GBfHZj4rBiTodLab6+vael8UxmVZzN+z0YrVE+JxfeAVcV3lDxLjCUkzu3kJnMR7b0gLgOxv8IFvW8jsq6N2lQmSrTvM37O8ZGJRnQEBSAQfx1lyK5AvrALClpkHaWFFucq8Pi76Eaef5nGxuRrcvOMRcO1nB5GZ/j4YVjcaMoI1vrz/Ey/Hvbx6dYoiqVT4s17lj0t0lG/t5VquudVtsAFta587youiJx5RaNgwkDrJKVXMoNrX6yKo06InmyTTpkRWMalJQZMoEpuhAYS0TCFskjdJHIAYSQRq02JsATF17aH/mNtFqEmrSOh5JmgjGS04NEj4orRSBB7UpJTowgJHAQ+R0MjCR4SdacVpKycugHinO+7jfeWnPfiPlIDjU4w04/3kkTWNTaADanOILQ9kkTUposgqIs06sTJI2g9gSsZXcWt7p7gEWO+3rCw0C444Wg5PS0iWka4VckZv2Fxa08SzEgAjLp328h385suK4tmcATySjXCPma5F/hBO+uvf1nqfA66VUV2Qqq2AFySRoByv9Jg1Z6CdGe9rOHVqioUQtY2yga67aQHBeweMbxFFUaEh3FzbW1hf5GexoEUA6cresWJbTRhbc/8xpUJmE9nfZ84NHLtd31IB8I3sB331k1XHi92uOg7Qzi+IzXbOEReZ3v5TznjfHPGV+Kx1Itv+Ymgs3NLiSlhlbnrsZHxHHZdem3P8TF8M4id+RlxicSGpkHkN/7SRmI41Wz13bq14Lh0LMANyRLp+Dh6b1mfL4rKLXzH/i8Zwuj7t0YeI5l1ta2v085Vio9DpYZqSKjjKcqt5giMdpf+0yg06D2sxXKdtrA206azPEzph/JwZv6Z1WkoeR00vJWSOTS7M1FvSHK867qNzf8AHnA6leykr4V5vzN+QEq8diSBa5A5DmL/AHP2+3HObbqJ2Y8CW5FhjeLBFNtTyUDwjz6mVCOGOZybnZbaD7wTKdCeWo6Dv3MGq12YG5KJ8nft1A/mslKjoNDg8ertkzBiOag2HYm1ryzpiY6liMmVvgC/CgOgP9T9T2mmw2KzorDmNuh5ibwlejjzQp8kHRQb3sU0o5zQK86SIHWqWXeV9PG62vPCyZ8kZ/V3EtRtF0THKt4A2KFoqGMJ0Exy+Zkx5LitDjj1sMqLIGpmT++AFyZNSIYT0cfnxpWS4MBQESdKse1IRiIBvK8jyopqmCROHj0MGV7mwhKraPHlcgYnSQOgk7PA6tadDy8UId7sSn9qKtqBW7akXsLiwPM8pa06kB9oELUHAvyOnbke0hZ1LRthVSR5TUNmv02FtB31m69meIs9CoB4nRQwULYZUtoPvpMbXp3J+XrD/ZriH+HqhybrYqy6WYNoVue3MTQ7DZe0nGveUHUE2dCARoQbDwn5W9ZRcI9q3U5Kr3XS7E3G2sh4uQWJoHOr20F+egBA59+crqfBWZczhE5BSwuT6fmFhRreMY+kVV0YMLHwE7nfMR0nnGKrF3ZurE2Gg+UtcVgXVdFzDkyHQajcWudLwVCmlwFOnryt0gAdhQBaWlMFgdfCAbnou8rKY2HXY+u87xzGIESnTa5vd7dOQkVsYNxPifvCETSmmw5m2mb7yXALnqU01BzDbe/UdJV0Fv8AzY/z8zT+xOEz11YgWUg9De+hFu/3lAj0v2kFqNEdz0/pEzM1ftP/ANumu+pN+e395nvchdX9F5+vQTaM1GOzjyQc50h2GTTM2gH17CB4/H28KjU7L0Xq56eXzg2Nx5LaWJAsOSoP3+plbVrrre7E8ubH/MeQHSc8pOTOnHjjBf7JMVxAXF7ux0UAWX07/XyguMrBACxDOwtlA0UW27fmNFYUwzXvUOnZL62Alcb3uTdjqSfv5SUi2xzVSdXIXy2UdAObHaNL28TAA8gdcg79WkKrdg29vhH/AOv2nGJHod+QP5MBHbte535KeQ/qboftND7PvemR0c/UAzLvV5D1/ufxNfwLCFKIzCzOSxHS9gPoPrNMb+xjma4hl4oop0nGE1VcyKjgTv8AWWTWC3lctZiwuTbXTYfzeedGMFGkjowxlLfoOpYFMwDMdb7drafWFrhlHw5tb69xBcM+ouLkE5TyYW+/WF03N2Q9cy+R/vcTOWGD7R1cEyqx1B1N916jvDcDjcoF4SGGqn4TpY8j0PbpAcTQymw9J5/lYHCnHr/hlkhSDGxWY6bSdVuLmDYdbDWSipcTzuUue3ZhoSOAZO9WVGIrztCqTpO/BKcXyYuNhVXER6U8wg5Uk2k4XINTDN5Um6iHGmdFEgyLiaFkdV3Kta5A5d9PrGvXJ2nKWLBqImW/UkgKPnuew1m/iqcpJmuKNyPMMUbHKBtpp9yZHh8PnYDUjnbvyHn/AATYe3XsyaJNVL5Hte5u2Y3NzoN9flBvZLC6qxA2zAm1rnY3uCNCNe156zdI6ezRcJ4ATTN016ZrLra2YrrmIvzsNJo8IgWkAwVgzeFVAZQrai5FhpffsOsXEcQ5T3Sp43bLcG4Cg394t9jz1263teNHCL43bQBGJvYm6gtZdt9SNBfcyGxgOJ4fRe5ZCuYgLURb5Qb20XRhtc9x0nm3tNwjISygZlJFQDz0e2w728+pnra4chDzsxUABh4NSF13uDbkAelrTC8dU++fOu4DEDYbDXTTTkew7QToGY7FVLoni8Y0ax5NA0pc4VxHBhH8OqEnKRyt+kyBH5X03mpI6mtuW/1m09jnSmjMzgMeuh5m3pY69CdrTFPUsBrtHUq+t28R289YhnsuN4mlWijrrYkBtddNbHb1My+Ir5iTc2udjc+g/J084PwzFZ6RVi5tsqfCBrpax3OpOnaBV8dYX+BRoAR4m8lmbK6CG3sB5KN/Mn7mB4msFvlOY7XXYf5UHX/k8oJXxDN8d1B1yKbO/d25CQMSRa2Vei6E/kD6x0TY03v36727dzOst9BqOZPP16f8RziwGoA2sN/Id5BUa+mw6fvE2BK1YHb9r+XQQcZqjKqqeiqv4795LgOHvXfIg0HxN+lfM/ibbhvCkoLZRdj8Tnc/sO0ErMsmVR17Kzg3s6Es9WxYahN1Xuf6j9POXlRZMseFvNItROOUnJ2yrNIxSz9zFNPkEC4moCo15gmCrz10OxH86yejRzL3g1SnqTrvpbYEcrTzsORTTS9HoYa40izoG4BG/LpePR2IV1+JTYjqOYt2IgKMbeEDqyjQnuvfrJaD5WzAkq1g/Y8mty7zU1LlKim+2lgVJ67A9J1qAK6G9jbXdT0MGpA+IgDOhK2OzKdcp7Hkf7wrDkEZgexJ/T/lfy6xSipxcZdMTSapguY7WjPdHlDsTT/VbbQ/vBXe50M+fy4Xgk29/hxTjxlQJ7i+kIw2GyHNJlIt3kD1TtJh5KceLJ36C6hAGaDvUDbwZsVdbEwRaovvMVHnL63SBtlhXAVSbgWme4ajVcQLGyBtWK3ub6BAfibbTbrpOcdx+RQt9Tv2EuPYhKWtQG9S2gbXLofhBtrv13n0viYnCFvtnVii1HZae1XEU92ab630KnUjoT1mb9nKypZSVscqqxFgApItsdbMD/tEs+M8Oq1nZspA5u9gPQAXMzlXBPQ8StmykG1rWvzUX1OgsOgnQ3Zs0enJRQPnyqCoIvpfxHMw+eve8ARQ+UkX8ecE6i45WNwPOUmA9q0dDnuGIN8oBFzzI3B0Asek7/7jp5LIWYqNgAL6332He8i7ZHs0WJrBKbs7AWJa4GWwGq8zc3+fSeX8Z4m1SozA63HhJutreFSbX256bx3G/aipVBS4AvfKNgRfc7neZ+gxzZhr/UP6hfUGWBY4kLVS+1zZwdSjjRW/B7eUzjKUJD6MLi3L0mmAFldTobqb2vt4b9CCAO9pT8fTVW5G4+Wo+9v9scX6B6Ksvc3kiNrIgY5DNBGs9m8QC4UlQBrd9VFuZFxeTcWZVqEoyuxGjXJVR1sf5rAOB4gJe4FraEgX+v3EbVq5mYotrm5Jtv8Ak9h9Jmym9DX01vmY63O57noJxanqfp6/gRq25c9yd/5/PNnvgNF0HXr3/vCxUPJsdTrzPTt/b5w7hXCHrm5utO+r827L189pPwXgjViHcZaY1A5v5dB3m0FEKoCiwAsANAAOkzc4qVM58uatRIMNQSmgRFCqOnPuTzPeOd5G41jGM3jT6OXskDyVHgYMlW9rwdCDM85BveRSNgRYWuFMixHxmx0bxH+0mqMNwJX1q405EbH8eU+fwTljyv8APZ2Y5qLJS2UE9DqOak8x212ljQYqHJ1N1J/0kC4lfRbMTYeId91PL7w/DKN9SpAXuLaW+X2ntdo6g9FIcAfCylT5gXX9vSEYdR47XDHSove2jfm/O8Gw1Y5NQQfhHexCg+t5PjaZzAowFRRccgyg6qf5zjQD6YZRlOoykf8Aib2+RMpKyvTqlT8B1U9uY8wfxNBUqAgEfEtiw6aG/wBM3rAuL4UtTOXVk1U9QOXqPqJj5GGOWNNdGWWHJa7Aq2PVdII+LvM9UrEm94qNc31M8teHFu7OVJ9FzXqXG+sHNTIhZjr0JtpIhUFr9JnuPcTLHKjXX+fKd3jePUutI1xw3bH4HELUrXq5SgNznZx5ABSLnt9RPWvZjiFJ0K4eiEVf6QovpuSLjUWO5OvlPCsPqQDbU6kkgW53I1+Ws9l9h+Il0bKoSilgtlCs7trc20Ubmw7ann6hv7LDjuIIFupW9+l551xrHksDm0zsx87gfYCXfttx0qxVd9demn7TDK71WCrtpmY7AH7ntuZJd0dD5gWQkEWvY69j9JC9Vm+IkzS/9PREYDTwm99yQM1z1bT0A7zP4qjlPcXBEyb2S17B7W1jkaxPeISO9recfYg2its3MEC+vQ6n0GsZjHLU3RtStmB5EAizjoeR8+0iVyLHmDOVUsCN7Kbf6WB38j944gyotJ8MlyOl52lS58u8JRhsBb8zVsQUtXSwNkGw536CMOJJFhoOn7RgI8/sOwk+CwT1XyUxc7ljoqjqTM2wbpWyNc7kIoJJ2VRv5zUcF9ngtnr2JGoQaqP9XXy285ZcL4OlBdPE5+Jzuew6CGmnMsk+JyzzN6QQKgEetS8DCmOW84ckuWzFdk7pBnSFqZ1lE0x+RxWxVsDVLidpn9MMRNJCyW1kz8tUPixnuIo8PFMv85/ouLK1a+UeKVWJxQZosTjbixFoAiFjJjBR+0vZ0caLPA1cxK9tD0I1EucEzMWHMld/kT6WMzCqVNxuNZo+GVxmDcjYf3+s7cM01SOnHK1Ra01Nr/511J5Bh17wvEtZlffI1m8mgpYhCDuCSbai2e/94bTAuxOxsANxtrf1P0my/DQjANN2a4IIDXA3TNsddSt736QmmLXX9PLpbe3ptI0rAqXINrZQLDWxPXrcCTs5UqLkLYX0vlvt6cu2ktAYDjWCNOuy28LeNPJjt6G4gzqiaseYFtrk9+U3HHeGiolzq6XZSBuOa+R+/wBfI+L4h3coTZV0sDp3Jvz6/KZw8ePJyZh8dSt9B2M4krDQ6dAdD5yvbEa62A6W+9oK9TkPtLThPs/Urat4E5sd7dhOnSRaBMiswUKSToAtyT5DeegcCpVqVIJbIgB8LG7sSPESAbA797W6GLhvD6GHAyAMx/W2x067t5LJ8TUYDMXCLzJAzkcwq7IPO8zc/wALSKXjGGznJoTe7Nz5/KLDUEojKlhYZnf+gdTfcnkPXlCFqZ/gAC/1tfL/ALeb+e3eA++GYimM4U/Exsmf+onXM3lr0ta8m2w7Cq6gozP4bqwRTuuYasb7sf5uZRY83d/9ZA9AJYsoU538bk2TNtm30H6VG9+gldiVB1vfcZrEZmvdj8ztyFhAform3nGXWOq8ox/vBEnSL/ztHV38HfUf/X9o3nB61S502H8Ma7JbGWkiLEiTS8H9ni1nq3VdwmzN5/0j6+UJ5FFbJclFbBeC8Det4j4E5tzbso/M2uDwiUkyILDn1Y9WPMzmYKAAAANABoAByAiWpecU8spPRy5JuRI9S0dTrCAVnJM4iG8UnyWzNIsWcRquIkp6ayHEUO857XRVBPvROe8leGN7QtBYXMifGK2woJ96Ld4JiK9t5ETreBYmrmvaYuKkqYLsMp1RaKDYenpvFI+GI7AX4dc33k7YVVEbRxLaWGkbicTrYzeSm5cfRrdnPdAwjALe4vaxuPTl66wQVAYVgDbNbnb8zqw43GV2VjdSov8ABglbDW11O1gDEzva2f4nZRvYKNc2mu0raeKZAwXS2p8ySBbXXUEyatXVVtfXLkBvbmo+c70jqD0xufIEBKo4UjqEGhHXUAX6+cKq1mJRkYZDfMhtc9Cp8+XeUb4tkQgWAA0t0PIWki45Budh05eY2gwLhcfkHidba+F9CPJra6zD+0/ClrVC9JbZviOynuNNZcvxa/8A20J6MSSPnz9AYHVqltWOc/0bIPPr5H6QUmieyp4dwlEN8pduoAAHq34l4mICr4nQdADc9fxK+vWVbZyGJ0C7KOngF7+sS40KCEUAi18osf8AxQFh/utG7Y+g/wDxL6lECC2tWpfNb/Kh8VvOwldiXQMC7NUc7F9r/wCSmL3+R9JBiMQ7Nd7oB+qwLf7F1VfO7N3kBxCppkYM29/jI5ZmOp8hpCgDK1TNZahKg/8Axqbu/wDrcfCOw+Z2jBiySEpoLrso+BB1c/pH1MAeobeK1NeYB8bdi36R5ax5xbZcqAIg20Kr6L8TecECCsTTPxVHFj8RAszDfIg/Sv1MrcTic58IsBoo5AfvIcRUYi7sTva/XssEpk/PlBjbJKh18pH39BO3nAdYiWxld7aDecpJ2ueUmwWDes+VFuTv0A7nkJreFez/ALtgzeNxt/Sp7Dn5zLN5MMKpvf4Zymkd9neAKlqlYXfQqp2TuerfaXeOqcx1hK0Ra7byGrRGX1E45ZeX2ZyOTlK2DioSNQJA1UjkJO6AC943hdFarsGJCojObakhStx9ZUKkOrK5sUc20OoYonkJcY/glNUZwCpQKbZs4IZrDU7c4Bg8OjZ8xYBEL+G1zYjTXzlZINrSCqdEFTGkchIXxzHkJYf9OR1zqzhTTqOA1swZCBYkbjWcq8JRaYqBmswUKp3DsSDmNrZdN+cUMSraGolSuJYG9hJHxh2sIfjeGU0BAfxoyAgsnizEA2Uaqdb6yH/AUPfPTzvdA18xRAxuLKGIsLXNydztLeCLdtFcaBcTimy2sIEathtCeMUwjFBm0IIzZfhIv+kkHzEqhUvB449pEcaZY08ZpsIoLlikVH8QcUcXEeAW6RtJ8180UUckrKj7EIbw/QseVh9TFFLj/SKh/aCC1rDQ3Nz5Lt9RIGxJsCTu+mnTbTzUn5TkU6kdhHXxJOUk5tS25GoB7ddZE3Ek0QIGZiDbKN+uZoooEseK7ubfMA2HlfQyNMQBdKSg5NyfCq+Q3O//ADFFASKqtXzsQAXOu5ypv03I85NRZibF7W/SihQPU3+giimnopElXFZWZEAVh8dQ3ZlB7nUny0gbYsAeG4HMnUnuepiiiGJDY3/Vyv4iPU6D0EHr4rxWvc8ydbeXU94ooCB2bUnfudTFmnYpLENY8pPw/BNVfIlhza+wH5iimeRtQ5L8M5Nm04fRSguRR5tzY9T+0OXG2EUU8GP3ncjmjt7OtWJF5FUxxItbnFFN+lodKxj2Yax+CrlGLUzlJBXYHTQ21HYRRS7aqhncVxGoVK5/C1rgKovbUagX5SHh2LNMudczIVBFtDcG/wBJyKbKciUEJxFizF2ZjkKaZQBe2lrWt5SSpjXYEFtGULawtlGwtsLTkU1bdCsrOJ8QqlbFyQCDbTW22Y2u1u8BocRqhmqByGb4job36gix+UUU2jtDskru1QlnYsx3JgjHLFFECGCsYoopNIZ//9k=" alt="panda">
+                        <img class="pad-l-85 w-252" src="data:image/jpeg;base64,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" alt="panda">
+                        <div class="black bt-l">
+                            VS
+                        </div>
+                        <div class="fn-w w-37">
+                            Original transparent PNG File size
+                            <span class="red-fw">57 KB</span>
+                        </div>
+                        <div class="l fn-w w-33">
+                            Shrunk transparent PNG File size 
+                            <span class="red-fw">15 KB</span>
+                        </div>
+                    </div>
+                    <div class="left-site">
+                        <img class="grass" src="../pictures/trava4.jpg" alt="grass">
+                        <img class="grass-1" src="../pictures/trava4.jpg" alt="grass">
+                        <img class="grass-2" src="../pictures/trava4.jpg" alt="grass">
+                        <img class="grass-3" src="../pictures/trava4.jpg" alt="grass">
+                        <img class="grass-4" src="../pictures/trava4.jpg" alt="grass">
+                        <img class="grass-5" src="../pictures/trava4.jpg" alt="grass">
+                        <img class="grass-6" src="../pictures/trava4.jpg" alt="grass">
+                        <img class="grass-7" src="../pictures/trava4.jpg" alt="grass">
+                        <img class="panda-2" src="https://static4.depositphotos.com/1000792/273/v/600/depositphotos_2732075-stock-illustration-panda-eating-bamboo.jpg" alt="panda">
+                        <div class="text-4">
+                            <span class="fn-sz-18">Get the</span>
+                            <span class="fn-w-2 black">Web Interfeke</span>
+                            Pro!
+                            <span class="l-h">Drag & drop</span>
+                            <span class="fn-w l-h-0">more than</span>
+                            20 files at once and have the 5 MB size limit
+                            <span class="fn-w">removed!</span>
+                        </div>
+                        <div class="w-20">
+                            <div>
+                                <img class="girl" src="data:image/jpeg;base64,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                                BAEEEEAQQQQBBBBAEEEEAQQQQBGIKxoxgN6xE5jEVrTUGgxrXlBqnbc4U2qygvLYDFWJ8VI+MUekmmnlzhJRa0VS7E4AsK3RwFDziLRlqeY63mwGqOOeU8dsMMvT5ZrLqvDzjRrcAe6eFIsFYhFnxrHLv4dukazWfVdHnDKy0VRxPy+EVVSKNvnzJeKUI+qcK7g2o8axeN1d1GWO5qOllzAYsLCOwMJiLMRzdYVAIxBrQqRXMEEcoZ2e9tBEd489i4BGYhSbXVEoMaltBBBAEEEEAQQQQBBBBAEEEEAQQQQBBBBAEEEEAQQQQBBBBAEYMEEBiCkEEBpdjULBBGjhNL2BnnuRQksd2AwHkBGNHWcymowoeR9III8eX7Pfj+v+OlXIRmCCLjmw2ELbb2sNcEETk3FY6NSihmIcib6jZewYeNDzMdAi0PrBBHo/H+rz/l/ZtdiQCCCLc2YzBBGAggggCCCCAIIIIAggggCCCCA/9k=" alt="girl">
+                                <span class="bt-l-2 fn-sz-3 color-text-girl">MAKE IT WITH ADOBE STOCK.</span>
+                            </div>
+                            <div>
+                                <div class="text-5">
+                                    Limited time offer: Get 10 free Adobe Stock images.
+                                </div>
+                            </div>
+                            <div class="photoshop">
+                                <span class="fn-sz-18 pd-l-4 l-h white w-20">Photoshop 2022 support</span>
+                                <span class="clr ">The plagin is fully</span>
+                                <span class="white fn-w">compatible</span>
+                                <span class="clr">with the latest version of </span>
+                                <span class="clr">Photoshop CC.</span>
+                                <div class="photoshop-plagin">
+                                   Get Photoshop-plagin
+                                </div>
+                            </div>
+                            <div class="create">
+                                Create perfect thumbnails
+                            </div>
+                            <div class="advertising">
+                                ADS VIA CARBON 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="big-practice-3-1">
+                    <h3>TIMESTAMP Initialization and the NULL Attribute</h3>
+                    <p>
+                        if the 
+                        <span class="decoration-3 font black">exlicit_defaults_for_timestamp</span>
+                        system variable is disabled,
+                        <span class="decoration-3 font black">TIMESTAMP</span>
+                        colums by default  are , cannot contain
+                        <span class="white-black font">NOT NULL</span>
+                        , cannot contain 
+                        <span class="white-black font">NULL</span>
+                        values, and assigning 
+                        <span class="white-black font">NULL</span>
+                        assigns the current timestamp.To permit a 
+                        <span class="decoration-3 font black">TIMESTAMP</span>
+                        colomn to contain 
+                        <span class="white-black font">NULL</span>
+                        ,explicitly deslare it with the 
+                        <span class="white-black font">NULL</span>
+                        attribute.In this case,the default value also becomes 
+                        <span class="white-black font">NULL</span>
+                        unless overridden with a 
+                        <span class="white-black font">DEFAULT</span>
+                        clause that specifies a different default value. 
+                        <span class="white-black font">DEFAULT NULL</span>
+                        can be used to explicitly specifi 
+                        <span class="white-black font">NULL</span>
+                        as the default value.(For a 
+                        <span class="decoration-3 font black">TIMESTAMP</span>
+                        column not declared with the 
+                        <span class="white-black font">NULL</span>
+                        attribute,
+                        <span class="white-black font">DEFAULT NULL</span>
+                        is invalid.)
+                        if a 
+                        <span class="decoration-3 font black">TIMESTAMP</span> 
+                        column permits 
+                        <span class="white-black font">NULL</span>
+                        values, assigning
+                        <span class="white-black font">NULL</span>
+                        sets it to 
+                        <span class="white-black font">NULL,</span>
+                        not to the current timestamp.
+                     </p>
+                     <p>
+                        The following table contains several 
+                        <span class="decoration-3 font black">TIMESTAMP</span>
+                        columns that permit 
+                        <span class="white-black font">NULL</span>
+                        values:
+                     </p>
+                     <p class="create-table pad-top">
+                        <span class="white-blue pad-top">CREATE TABLE</span>
+                        <span class="black pd-l">t</span>
+                        <span class="bt-r">(</span>
+                        <span class="pd-l-15 black-white bt-r-1">ts1</span>
+                        <span class="violet bt-r-2">TIMESTAMP</span>
+                        <span class="pink bt-r-2 pd-l">NULL</span>
+                        <span class="black-blue bt-r-2 pd-l">DEFAULT</span>
+                        <span class="pink bt-r-2 pd-l">NULL</span>
+                        <span class="bt-r-2">,</span>
+                        <span class="ts2 black-white">ts2</span>
+                        <span class="ts2 violet">TIMESTAMP</span>
+                        <span class="pink ts2 pd-l">NULL</span>
+                        <span class="black-blue ts2 pd-l">DEFAULT</span>
+                        <span class="pink ts2 pd-l">0</span>
+                        <span class="ts2">,</span>
+                        <span class="ts3 black-white">ts3</span>
+                        <span class="violet bt-l-3 time3">TIMESTAMP</span>        
+                        <span class="pink pd-l null3">NULL</span>   
+                        <span class="black-blue pd-l default">DEFAULT </span>
+                        <span class="black-blue pd-l cur-time">CURRENT_TIMESTAMP</span>
+                        <span class="end1">);</span>
+                    </p>
+                    <p>
+                        A
+                        <span class="decoration-3 font black">TIMESTAMP</span>
+                        column that permits
+                        <span class="white-black font">NULL</span>
+                        value does 
+                        <span class="black">not</span>
+                        take on the current timestamp at insert time except under one of the following conditions:
+                    </p>
+                    <ul class="marker">
+                        <li>
+                            its default value is defined as 
+                            <span class=" decoration-3 font black">CURRENT_TIMESTAMP</span>
+                            and no value is spesified for the column
+                        </li>
+                    </ul>
+                    <ul class="marker">
+                        <li>
+                            <span class="decoration-3 font black">CURRENT_TIMESTAMP</span>
+                            or any of its synonyms such as 
+                            <span class="decoration-3 font black">NOW()</span>
+                            is explicitly inserted into the column 
+                        </li>
+                    </ul>
+                    <p>
+                        In other worlds, a 
+                        <span class="decoration-3 font black">TIMESTAMP</span>
+                        column defined to permit 
+                        <span class="white-black font">NULL</span>
+                        values auto-initializes only if its definition includes
+                        <span class="white-black font">DEFAULT CURRENT_TIMESTAMP:</span> 
+                    </p>
+                    <p class="create-table-2 pad-top">
+                        <span class="white-blue pad-top">CREATE TABLE</span>
+                        <span class="black pd-l">t</span>
+                        (
+                        <span class="black">ts</span>
+                        <span class="violet">TIMESTAMP</span>
+                        <span class="pink pd-l">NULL</span>
+                        <span class="black-blue pd-l">DEFAULT</span>
+                        <span class="black-blue pd-l">CURRENT_TIMESTAMP</span> 
+                        )
+                        ;
+                    </p>
+                    <p>
+                        If the 
+                        <span class="decoration-3 font black">TIMESTAMP</span>
+                        column permits
+                        <span class="white-black font">NULL</span>
+                        values but its definition does not include 
+                        <span class="white-black font">DEFAULT CURRENT_TIMESTAMP,</span> 
+                        you must explicitly insert a value corrsponding to 
+                        <span class="m-r-25">the</span> 
+                        current date and time.Suppose that tables 
+                        <span class="white-black font">t1</span>
+                        and
+                        <span class="white-black font">t2</span>
+                        have these defenitions:
+                    </p>
+                    <p class="create-table-3 pad-top">
+                        <span class="white-blue">CREATE TABLE</span>
+                        <span class="black pd-l">t1</span>
+                        (
+                        <span class="black">ts</span>
+                        <span class="violet">TIMESTAMP</span>
+                        <span class="pink pd-l">NULL</span>
+                        <span class="black-blue pd-l">DEFAULT</span>
+                        <span class="olive-green">'0000-00-00 00:00:00'</span>
+                        );
+                        <span class="pad-top-1 white-blue">CREATE TABLE</span>
+                        <span class="black pd-l pad-top-1">t2</span>
+                        <span class="pad-top-1">(</span>
+                        <span class="black pad-top-1">ts</span>
+                        <span class="violet pad-top-1">TIMESTAMP</span>
+                        <span class="pink pd-l pad-top-1">NULL</span>
+                        <span class="pad-top-1 black-blue-1 pd-l">DEFAULT</span>
+                        <span class="pad-top-1 pink pd-l">NULL</span>
+                        <span class="pad-top-1">);</span>
+                    </p>
+                    <p>
+                        To set the
+                        <span class="decoration-3 font black">TIMESTAMP</span>
+                        column in either table to the current timestamp at insert time,explicitly assign it that value.For example:
+                    </p>
+                    <p class="insert-into">
+                        <span class="white-blue pd-top-10">INSERT INTO</span>
+                        <span class="black pd-l pad-top-1 pd-top-10 pd-r20">t2</span>
+                        <span class="white-blue pd-top-10 pd-r20">VALUES</span>
+                        <span class="pd-top-10 pd-r20">(</span>
+                        <span class="black-blue pd-l pd-top-10 pd-r20">CURRENT_TIMESTAMP</span>
+                        <span class="pd-top-10 pd-r20">);</span> 
+                        <span class="pad-top-2 white-blue">INSERT INTO</span>
+                        <span class="black pd-l pad-top-2">t2</span>
+                        <span class="white-blue pad-top-2 pd-l">VALUES</span>
+                        <span class="pad-top-2">(</span>
+                        <span class="red pad-top-2">NOW</span>
+                        <span class="pad-top-2">());</span>
+                    </p>
+                </div>
+                <div class="big-practice-4">
+                    <h2 class="black">Dowload</h2>
+                    Bootstrap (currently v3.4.1) has a few easy ways to quickly get started, each one appealing to a different skill level and use case.Read through to see what suits your particular needs.
+                    <h3 class="black">Bootstrap</h3>
+                    <div class="w-25">
+                        Compiled and minified CSS, JavaScript,and fonts. No docs or original sourse files are included.
+                    </div>
+                    <h3 class="black sourse-code">Sourse Code</h3>
+                    <div class="w-25 sourse-code">
+                        Sourse Less,JavaScript and fonts files along with our docs.
+                        <span class="fn-w">Requires a Less compiler and</span>
+                        <span class="blue-w">some setup.</span>
+                    </div>
+                    <h3 class="black Sass">Sass</h3>
+                    <div class="w-25 Sass">
+                        <span class="blue">Bootstrap ported from Less to Sass</span>
+                        for easy inclusion in Rails, Compass, or Sass-only projects.
+                    </div>
+                    <button class="but" type="button">Dowload Bootstrap</button>
+                    <button class="but-2" type="button">Dowload source</button>
+                    <button class="but-3" type="button">Dowload source</button>
+                </div>
+                <div class="big-practice-5">
+                    <h2 class="black f-w">Customize the Checkout experiense</h2>
+                    <button class="but-4 grey" type="button">DOSC</button>
+                    <div class="current-3">CURRENT</div>
+                    <span class="text-6">Last updated: April 28th 2022,@ 5:51:11 pm</span>
+                    <p>
+                        <span class="bot-50">Extend your Checkout integration with these features. We recommend starting with</span>
+                        <span class="blue bot-50">showing a cancellation page</span>
+                        <span class="bot-50">and</span>
+                        <span class="blue bot-50">validating user input</span>
+                        <span class="bot-50">.</span>
+                    </p>
+                    
+                    </table>
+                    <table class="my-table">
+                        <thead class="hei-32">
+                            <tr>
+                                <th>Feature</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="td-1-320w text-34">
+                                    <a class="dec-none text-34" href="html1">Support multiple shipping options</a>
+                                    <a class="text-35 pd-l-140">Offer shipping options to your buyer</a>
+                                </td>
+                                <td class="td-1-320w  text-35">
+                                    <a class="dec-none" href="html2">Display PayPal buttons with other payment methods</a>
+                                    <a class="pd-l-100">Provide a clean user interface when you present PayPal and other funding sources on your site.</a>
+                                </td>
+                                <td class="td-1-320w  text-35">
+                                    <a class="dec-none" href="html1">Authorize payment and capture funds later</a>
+                                    <a class="text-36">Change your checkout integration from a one-step payment solution to a two-step, authorize and capture later solution so you can complete business tasks, like verifying inventory, before finalizing the transaction.</a>
+                                </td>
+                                <td class="td-1-320w text-35">
+                                    <a class="dec-none" href="html1">Display funding source</a>
+                                    <a class="pd-l-208">As a best practice, show your buyer the funding source they used for their purchase.</a>
+                                </td>
+                                <td class="td-1-320w text-35">
+                                    <a class="dec-none t-10" href="html1">Show a cancellation page</a>
+                                    <a class="t-10 pd-l-194">Give buyers clear confirmation when they cancel during the checkout flow.</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="big-practice-6">
+                    <p>
+                        <span class="fn-sz-30">Руководство по MongoDB.</span>
+                        <span class="fn-sz-30 w-450">Создание базы данных</span>
+                        <span class="pd-t dsbl">В данной статье мы расмотрим процесс (далее-БД) в MongoDB</span>
+                    </p>
+                    <div class=" br-4">
+                    </div>
+                    <div class="br-4">
+                    </div>
+                    <p>
+                        <span class="fn-w-bl">Запрос USE</span>
+                    </p>
+                    <p>
+                        <span class="pd-t">Для создания новый БД в MongoDB используеться команда</span>
+                        <span class="fn-w-bl">use</span>
+                        <span class="pd-t w-210">Запрос имеет следующий вид:</span>
+                    </p>
+                    <div class="pd-t mongodb-use use">
+                        <div>use  ИМЯ_БД</div>
+                    </div>
+                    <p>
+                        В результате выполнения данного запроса создаётся новая БД, если она еще не создана. 
+                    </p>
+                    <p class="lh-0">
+                        Для понимания того, как это работает на практике, рассмотрим простой пример.
+                    </p>
+                    <div class="br-4 pd-30">
+                    </div>
+                    <p>
+                        <span class="fn-w-bl">Пример</span>
+                    </p>
+                    <p class="pd-t-20">
+                        Предложим, что мы хотим создать новую БД с именем projectdb.Для этого нам необходимо открыть терминал и запустить MongoDB:
+                    </p>
+                    <div>
+                        <div class="Search">
+                            Search...
+                        </div>
+                    </div>
+                    <ul class="management-mongodb">
+                        <li class="ds-flex management-1">
+                           Руководство по MongoDB
+                        </li>
+                        <li>
+                            <a class="text-18" href="html">1. Введение</a>
+                        </li>
+                        <li>
+                            <a class="text-19" href="html">2. Преймушества перед реляцыонными БД</a>
+                        </li>
+                        <li>
+                            <a class="text-20" href="html">3. Установка MongoDB (Ubuntu)</a>
+                        </li>
+                        <li>
+                            <a class="management-2" href="html">4. Типы данныч MongoDB</a>
+                        </li>
+                        <li>
+                            <a class="management-3" href="html">5. Моделерование данных</a>
+                        </li>
+                        <li>
+                            <a class="management-4" href="html">6. Создание базы данных</a>
+                        </li>
+                        <li>
+                            <a class="management-5" href="html">7. Удаление базы данных</a>
+                        </li>
+                        <li>
+                            <a class="management-6" href="html">8. Создание коллекцый</a>
+                        </li>
+                        <li>
+                            <a class="management-7" href="html">9. Удаление коллекцый</a>
+                        </li>
+                        <li>
+                            <a class="management-8" href="html">10. Вставка документа</a>
+                        </li>
+                        <li>
+                            <a class="management-9" href="html">11. Запрос докумета</a>
+                        </li>
+                        <li>
+                            <a class="management-10" href="html">12. Изменение документа</a>
+                        </li>
+                        <li>
+                            <a class="management-11" href="html">13. Удаление документа</a>
+                        </li>
+                        <li>
+                            <a class="management-12" href="html">14. Проекции (Projekcion)</a>
+                        </li>
+                        <li>
+                            <a class="management-13" href="html">15. Ограничение документов</a>
+                        </li>
+                        <li>
+                            <a class="management-14" href="html">16.Сортировка документов</a>
+                        </li>
+                        <li>
+                            <a class="management-15" href="html">17. Индексация</a>
+                        </li>
+                        <li>
+                            <a class="management-16" href="html">18. Агрегация</a>
+                        </li>
+                        <li>
+                            <a class="management-17" href="html">19. Реплекация</a>
+                        </li>
+                        <li>
+                            <a class="management-18" href="html">20. Шардинг(Sharding)</a>
+                        </li>
+                        <li>
+                            <a class="management-19" href="html">21. Резервирование</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="big-practice-7">
+                    <div>
+                        Themes >
+                    </div>
+                    <div class="install-themes-1">
+                        Install themes
+                    </div>
+                    <p>
+                        <span class="install-themes-2">Install themes</span>
+                    </p>
+                    <p>
+                        IntroJS provides awesome templates, and we are trying to update and add more templates for next versions. You can browse all avaible themes under this category.
+                    </p>
+                    <p>
+                        In order to use themes, all you need to do is appending the theme stylesheet to your page,
+                        <span class="fn-w">after</span> 
+                        IntroJS CSS file:
+                    </p>
+                    <div class="example-install-themes">
+                        <p>
+                            <span class="text-21">Add IntroJS styles</span>
+                            <span class="pink1"><</span>
+                            <span class="red1">link</span>
+                            <span class="orange1">href</span>
+                            <span class="pink1">="</span>
+                            <span class="red1">../../introjs.css</span>
+                            <span class="pink1">"</span>
+                            <span class="orange1">rel</span>
+                            <span class="pink1">="</span>
+                            <span class="red1">stylesheet</span>
+                            <span class="pink1">"></span>
+                        </p>
+                        <p>
+                            <span class="text-22">Add nazanin template</span>
+                            <span class="pink2"><</span>
+                            <span class="red2">link</span>
+                            <span class="orange2">href</span>
+                            <span class="pink2">="</span>
+                            <span class="red2">../../themes/introjs-nazanin.css</span>
+                            <span class="pink2">"</span>
+                            <span class="orange2">rel</span>
+                            <span class="pink2">="</span>
+                            <span class="red2">stylesheet</span>
+                            <span class="pink2">"></span>
+                        </p>
+                    </div>
+                    <img class="pensil" src="https://img.freepik.com/free-vector/realistic-blue-pencil-isolated-on-white-background_117553-128.jpg">
+                    <span class="text-23">Edit this page</span>
+                    <div class="previous">
+                        <div class="previous2">
+                            Previous
+                        </div>
+                        <div class="text-24">
+                            «Hints options
+                        </div>
+                    </div>
+                    <div class="previous3">
+                        <div class="next">
+                            Next
+                        </div>
+                        <div class="text-25">
+                            Intro.js Themes»
+                        </div>
+                    </div>
+                </div>
+                <div class="big-practice-8">
+                    <div class="db-migrate">
+                        <div class="db-migrate2">
+                            <div class="house">
+                                <img class="house" src="https://papik.pro/uploads/posts/2021-11/thumbs/1636210472_24-papik-pro-p-domik-logotip-foto-27.jpg">
+                                <span class="text-26">db-</span>
+                                <span class="text-27">migrate</span>
+                                <div class="Search2">
+                                    Search docs 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-through">
+                            <div class="cl-grey">
+                                Search-through
+                            </div>
+                            <div class="cl-greywhite pd-t-5">
+                                Home
+                            </div>
+                            <div class="cl-greywhite pd-t-5">
+                                Helping db-migrate
+                            </div>
+                            <div class="cl-grey pd-t-5">
+                                Getting started
+                            </div>
+                            <div class="pd-l-10 cl-greywhite pd-t-5">
+                                Installation
+                            </div>
+                            <div class="pd-l-10 cl-greywhite pd-t-5">
+                                Configuration
+                            </div>
+                            <div class="pd-l-10 cl-greywhite pd-t-5">
+                                Commands
+                            </div>
+                            <div class="pd-l-10 cl-greywhite pd-t-5">
+                                Usage
+                            </div>
+                            <div class="cl-grey pd-t-5">
+                                API
+                            </div>
+                            <div class="pd-l-10 cl-greywhite pd-t-5">
+                                Generic Datatypes
+                            </div>
+                        </div>
+                        <div class="sql-api">
+                            SQL API 
+                        </div>
+                        <div class="bac-grey sql-api2 cl-gr-wh">
+                            <div>
+                                Migrations API-SQL
+                            </div>
+                            <div class="pd-t-15">
+                                createTable(tableName,colum
+                                nSpec,callback)
+                            </div>
+                            <div class="pd-t-15">
+                                dropTable(tableName,[options,]callback)
+                            </div>
+                            <div class="pd-t-15">
+                                renameTable(tableName,new
+                                TableName,callback)
+                            </div>
+                            <div class="pd-t-15">
+                                addColumn(tableName,colum
+                                nName,columnSpec,callback)
+                            </div>
+                            <div class="pd-t-15">
+                                removeColumn(tableName,co
+                                lumnName,callback)
+                            </div>
+                            <div class="pd-t-15">
+                                renameColumn(tableName,ol 
+                                dColumnName,newColumnN 
+                                ame,callback
+                            </div>
+                            <div class="pd-t-15">
+                                changeColumn(tableName,)
+                                ColumnNamecolumnSpec,ca 
+                                llback)
+                            </div>
+                            <div class="pd-t-15">
+                                addIndex(tableName,
+                                indexName,columns
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="git-hub">
+                        <div class="git-hub-2">
+                            GitHub
+                        </div>
+                        <div class="previous4">
+                            « Previous
+                        </div>
+                        <div class="next2">
+                            Next »
+                        </div>
+                    </div>
+                    <div class="docs">
+                        <div class="blue1">
+                            Docs
+                        </div>
+                        <div class="text-28">
+                            » API » SQL API 
+                        </div>
+                        <div class="edit">
+                            Edit on GitHub
+                        </div>
+                        <div class="br-4-1">
+                        </div>
+                    </div>
+                    <div class="migrations-api-sql">
+                        <h2>Migrations API-SQL</h2>
+                        <div>
+                            Below are examples of all the different migrations supported by db-migrate. Please note that not all migrations are supported by all detabases. for example, SQLite does not support dropping columns.
+                        </div>
+                        <h3>createTable(tableName,columnSpec,callback</h3>
+                        <div>
+                            Cretes a new table with the spesified columns.
+                        </div>
+                        <div class="pd-t-15 text-29">
+                            Arguments 
+                        </div>
+                        <ul class="marker r-19">
+                            <li>
+                                tableName-the name of the table to create 
+                            </li>
+                            <li>
+                                columnSpec-a hash of column defenitions 
+                            </li>
+                            <li>
+                                callback(err)-callback that will be invoked after table creation
+                            </li>
+                        </ul>
+                        <div class="pd-t-15 text-29">
+                            Examples 
+                        </div>
+                        <div class="pd-top-10 examples3 pl-6">
+                            <div class="cl-grey1">
+                                // with no table options
+                            </div>
+                            <div>
+                                exports.up
+                                <span class="black">= fanction</span>
+                                (db.callback) {
+                            </div>
+                            <div class="text-30">
+                                db.createTable
+                                <span>(</span>
+                                <span class="red">'pets'</span>
+                                <span class="black">,</span>
+                                {
+                            </div>
+                            <div class="text-31">
+                                id: { type: 
+                                <span class="red">'int'</span>
+                                <span class="black">,</span>
+                                primaryKey:
+                                <span class="aqua">true</span>
+                                <span class="black">,</span>
+                                autoIncrement: 
+                                <span class="aqua">true</span>
+                                }
+                                <span class="black">,</span>
+                            </div>
+                            <div class="text-31">
+                                name:
+                                <span class="red">
+                                    'string'
+                                </span>
+                                <span class="text-30 cl-grey1">
+                                    // shorthand notation
+                                </span>
+                            </div>
+                            <div class="text-30">
+                                }, callback);
+                            </div>
+                            }
+                            <div class="cl-grey1">
+                                // with table options
+                            </div>
+                            <div>
+                                exports.up
+                                <span class="black">= fanction</span>
+                                (db.callback) {
+                            </div>
+                            <div class="text-30">
+                                db.createTable
+                                <span>(</span>
+                                <span class="red">'pets'</span>
+                                <span class="black">,</span>
+                                {
+                            </div>
+                            <div class="text-31">
+                                columns: }
+                            </div>
+                            <div class="text-32">
+                                id: { type: 
+                                <span class="red">'int'</span>
+                                <span class="black">,</span>
+                                primaryKey:
+                                <span class="aqua">true</span>
+                                <span class="black">,</span>
+                                autoIncrement: 
+                                <span class="aqua">true</span>
+                                }
+                                <span class="black">,</span>
+                            </div>
+                            <div class="text-32">
+                                name:
+                                <span class="red">
+                                    'string'
+                                </span>
+                                <span class="text-30 cl-grey1">
+                                    // shorthand notation
+                                </span>
+                            </div>
+                            <div class="text-31">
+                                },
+                            </div>
+                            <div class="text-31">
+                                ifNotExists:
+                                <span class="aqua">true</span>
+                            </div>
+                            <div class="text-30">
+                               },  callback);
+                            </div>
+                            }
+                        </div>
+                        <div class="pd-t-20">
+                            <div class="text-33">
+                                Column Specs
+                            </div>
+                        </div>
+                        <div class="pd-t-30">
+                            The following options are available on column specs 
+                        </div>
+                        <ul class="pd-t-8">
+                            <li class="marker">
+                                type-the column data type.Supported types can be found in db-migrate-shared/data_type.js 
+                            </li>
+                            <li class="marker">
+                                lenght-the column data lenght, where supported
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            <footer-component></footer-component>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous">
+        </script>
+        <script src="../components/header.js" type="text/javascript" defer></script>
+        <script src="../components/footer.js" type="text/javascript" defer></script>
+        <script type="text/javascript" src="../scripts/main.js"></script>
+    </body>
+</html>
