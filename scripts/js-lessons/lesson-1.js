@@ -21,5 +21,7 @@ const useFunc = function myFunc2() {
 console.log(useFunc); // Выведет не результат работы функции, а её саму
 useFunc(); // А тут уже результат
 
+var L1;//переменая
+L1 = 7;//значение 
 
 

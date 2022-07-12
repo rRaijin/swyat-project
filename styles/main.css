@@ -2063,6 +2063,145 @@ nav, ul {
     padding-left: 194px;
 }
 
+.big-practice-9 {
+    height: 580px;
+    background-color: white;
+    width: 100%;
+    padding-top: 20px;
+    font-family: sans-serif;
+}
+
+.tx-search-contact {
+    padding-top: 6px;
+    padding-left: 8px;
+    width: 688px;
+    height: 17px;
+}
+
+.mr-l-50 {
+    margin-left: 50px;
+}
+
+.search {
+    width: 3%;
+    position: relative;
+    left: 754px;
+    bottom: 49px;
+}
+
+.contact {
+    background-color: white;
+    width: 100%;
+}
+
+.email {
+    width: 450px;
+    position: relative;
+    left: 100px;
+    height: 20px;
+    padding-top: 6px;
+    padding-left: 8px;
+    margin-left: 50px;
+}
+
+.email1 {
+    position: relative;
+    left: 150px;
+}
+
+.text-37 {
+    color:rgb(125, 125, 125);
+    font-family: sans-serif;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.first-name {
+    width: 450px;
+    position: relative;
+    left: 100px;
+    height: 20px;
+    padding-top: 6px;
+    padding-left: 8px;
+    margin-left: 50px;
+    top: 15px;
+}
+
+.first-name1 {
+    position: relative;
+    left: 150px;
+    bottom: 5px;
+    top: 10px;
+}
+
+.sur-name {
+    width: 450px;
+    position: relative;
+    left: 100px;
+    height: 20px;
+    padding-top: 6px;
+    padding-left: 8px;
+    margin-left: 50px;
+    top: 25px;
+}
+
+.sur-name1 {
+    position: relative;
+    left: 150px;
+    bottom: 5px;
+    top: 20px;
+}
+
+.contact-namber {
+    width: 450px;
+    position: relative;
+    left: 100px;
+    height: 20px;
+    padding-top: 6px;
+    padding-left: 8px;
+    margin-left: 50px;
+    top: 35px;
+}
+
+.contact-namber1 {
+    position: relative;
+    left: 150px;
+    bottom: 5px;
+    top: 30px;
+}
+
+.address {
+    position: relative;
+    top: 40px;
+    left: 150px;
+    width: 456px;
+    height: 90px;
+}
+
+.address1 {
+    position: relative;
+    top: 30px;
+    left: 150px;
+}
+
+.br-fr-grey {
+    border: 1.6px solid #cacaca;
+    border-radius: 6px;
+}
+
+.submit {
+    width: 82px;
+    height: 39px;
+    border: 0;
+    background-color: #0028ff;
+    color: #eec4c4;
+    border-radius: 5px;
+    position: relative;
+    left: 150px;
+    top: 37px;
+    font-family:sans-serif;
+    font-size: 16px;
+}
 /* MEDIA QUERIES */
 @media screen and (max-width: 800px) {
     .preview {
