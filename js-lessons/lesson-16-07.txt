@@ -1,0 +1,6 @@
+3. Типы данных
+    3.1. Числа. Дополнительно системы счисления(десятичная, двоичная, восьмиричная, шестнадцатиричная)
+    3.2. Модуль Math https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math
+    3.3. NaN
+
+    4.1. Строка

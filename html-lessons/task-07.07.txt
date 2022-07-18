@@ -7,12 +7,3 @@
 2. Логическое деление страницы. (перед выполнением, напишешь мне - короткий звонок, скажешь как ты бы "разбил" верстку)
     Задание: homework-07-07.png
 3. css-reset (Я добавил в начале main.css)
-<div>
-                <!-- Тут продолжить выполнять д\з -->
-                <div class="search-contact">
-                    <form action="/action_page.php">
-                        <textarea class="tx-search-contact mr-l-50" id="w3review" name="w3review" rows="4" cols="50">Search for a contact</textarea>
-                    </form>
-                    <div class=""
-                </div>
-            </div>
