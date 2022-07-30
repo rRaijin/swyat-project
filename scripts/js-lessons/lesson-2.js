@@ -39,7 +39,7 @@ console.log(str2);
     2 + 3 = 5, где 2 и 3 это операнды
 */
 const concatStr = 'ab' + 'cd';
-console.log(sumStr);
+console.log(concatStr);
 const concatStrWithNumber = 2 + 'руки';
 console.log(concatStrWithNumber);
 
