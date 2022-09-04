@@ -74,6 +74,34 @@ nav, ul {
     display: flex;
 }
 
+.flex-col {
+    flex-direction: column;
+}
+
+.w-33p {
+    width: 33.333333333%;
+}
+
+.m-10 {
+    margin: 10px;
+}
+
+.rounded-md {
+    border-radius: 5px;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
 /* ширина */
 .w-full {
     width: 100%;
@@ -3253,7 +3281,17 @@ nav, ul {
     font-size: 20px;
 }
 
+.some1 {
+    background-color: #fff;
+}
 
+.some1 > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid rgb(126, 122, 122);
+    padding: 8px;
+}
 
 
 
