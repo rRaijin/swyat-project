@@ -1,0 +1,543 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>12.09.2022 Archive</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../styles/main.css"/>
+        
+    </head>
+    <body>
+        <div id="container">
+            <header-component></header-component>
+            <div class="big-practice-9">
+                <!-- Тут продолжить выполнять д\з -->
+                <div>
+                    <form action="/action_page.php">
+                        <input class="tx-search-contact mr-l-50 text-37" type="text" id="lname" name="lname" value="Search for a contact"><br><br>
+                    </form>
+                        <img class="search" src="data:image/png;base64,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">
+                </div>
+                <div class="contact">
+                    <form action="/action_page.php">
+                        <label class="email1" for="lname">Email address</label><br>
+                        <input class="email text-37 br-fr-grey" type="text" id="lname" name="lname" value="name@example.com"><br><br>
+                    </form>
+                    <form action="/action_page.php">
+                        <label class="first-name1" for="lname">First name</label><br>
+                        <input class="first-name text-37 br-fr-grey" type="text" id="lname" name="lname" value="Bob"><br><br>
+                    </form>
+                    <form action="/action_page.php">
+                        <label class="sur-name1" for="lname">Sur name</label><br>
+                        <input class="sur-name text-37 br-fr-grey" type="text" id="lname" name="lname" value="Bob"><br><br>
+                    </form>
+                    <form action="/action_page.php">
+                        <label class="contact-number1" for="lname">Contact Namber</label><br>
+                        <input class="contact-namber text-37 br-fr-grey" type="text" id="lname" name="lname" value="+1 1234567890"><br><br>
+                    </form>
+                    <form action="/action_page.php">
+                        <p><label class=" address1" for="w3review">Address</label></p>
+                        <textarea class="address br-fr-grey" id="w3review" name="w3review" rows="4" cols="50"></textarea>
+                        <br>
+                    </form>
+                </div>
+                <div>
+                    <form>
+                        <br>
+                        <button class="submit" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="big-practice-10 f-n-f">
+                <div class="important-information-1">
+                        <a class="dec-none" href="html">Эта страница была переведена с английского языка силами сообщества. Вы тоже можете внести свой вклад, присоединившись к русскоязычному сообществу MDN Web Docs.</a>
+                    <img class="inf" src="https://papik.pro/uploads/posts/2021-12/thumbs/1639315805_53-papik-pro-p-klipart-informatsiya-55.png" alt="information">
+                </div>
+                <div class="related-topics">
+                    <div class="text-40">
+                        Related Topics
+                    </div>
+                    <div>
+                        <ol>
+                            <li>
+                                <a>
+                                    <strong class="m-t-f-s f-w-b"> 
+                                        Новички начинают здесь!
+                                    </strong>
+                                </a>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary class="m-t-20">
+                                        Начало роботы с Вебом 
+                                    </summary>
+                                </details>
+                            </li>
+                            <li>
+                                <a>
+                                    <strong class="m-t-f-s f-w-b">
+                                        HTML — структура Веба
+                                    </strong>
+                                </a>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary class="m-t-20">
+                                        Введение в HTML 
+                                    </summary>
+                                </details>
+                                <details>
+                                    <summary class="m-t-20">
+                                        Мультимедиа и встраивание
+                                    </summary>
+                                </details>
+                                <details>
+                                    <summary class="m-t-20">
+                                        HTML таблицы
+                                    </summary>
+                                </details>
+                            </li>
+                            <li>
+                                <a>
+                                    <strong class="m-t-f-s f-w-b"> 
+                                        CSS — стилизирование Веба
+                                    </strong>
+                                </a>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary class="m-t-20">
+                                        Введение в CSS
+                                    </summary>
+                                </details>
+                                <details>
+                                    <summary class="m-t-20">
+                                        Устройство CSS
+                                    </summary>
+                                </details>
+                                <details>
+                                    <summary class="m-t-20">
+                                        Стилизирование текста
+                                    </summary>
+                                </details>
+                                <details>
+                                    <summary class="m-t-20">
+                                        CSS макет
+                                    </summary>
+                                </details>
+                            </li>
+                            <li>
+                                <a>
+                                    <strong class="m-t-f-s f-w-b"> 
+                                        JavaScript — динамический клиентский скриптинг
+                                    </strong>
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="First-dive-into-JS">
+                    <div class="text-41">
+                        Первое погружение в JavaScript
+                    </div>
+                    <div>
+                        <ul class="back-overview-next">
+                            <li>
+                                <a href="html1">
+                                    <span class="back-02">Назад</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="html2">
+                                    <span class="back-03">Обзор:Первые шаги</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="html3">
+                                    <span class="back-02">Далее</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="l-n-1-3">
+                            Теперь, когда вы получили 
+                            <a href="html4">базовое представление о JavaScript</a>
+                            — самое время познакомиться с ним на практике! В данной статье представлен ускоренный практический курс, демонстрирующий основные возможности JavaScript. В этом курсе, шаг за шагом, вы создадите простую игру «Угадай число».
+                        </div>
+                    </div>
+                    <div>
+                        <table class="my-table2">
+                            <tbody>
+                                <tr class="bcr-white-bl">
+                                    <th class="my-table2-1 text-44">
+                                        Необходимые навыки:
+                                    </th>
+                                    <td>
+                                        Базовая компьютерная грамотность, знание основ HTML и CSS, понимание что такое и для чего нужен JavaScript.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-42">
+                                        Цели: 	
+                                    </th>
+                                    <td class="text-43">
+                                        Получение первого опыта в программировании на JavaScript.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="l-n-1-3 m-t-20">
+                        Вам не придётся сразу понимать весь код — мы только хотим познакомить вас с базовыми концепциями языка и дать представление о том, как работает JavaScript (и другие языки программирования). В дальнейших статьях вы изучите эти концепции более подробно!
+                    </div>
+                    <div class="important-information-2 l-n-1-3">
+                        Большинство языковых конструкций JavaScript, с которыми вы познакомитесь (функции, циклы и т.д.), имеют аналоги в других языках программирования — т.е. языки имеют разный синтаксис, но концепции в большинстве случаев те же самые.
+                        <img class="inf2" src="https://papik.pro/uploads/posts/2021-12/thumbs/1639315805_53-papik-pro-p-klipart-informatsiya-55.png" alt="information">
+                    </div>
+                </div>
+                <div class="in-this-article">
+                    <div class="text-40">
+                        In this article 
+                    </div>
+                    <div class="l-h-2-5 m-r-t-20 text-45">
+                        Думай как прогромист
+                    </div>
+                    <div class="l-h-2-5 text-45">
+                        Игра "Угадай число"
+                    </div>
+                    <div class="l-h-2-5 text-45">
+                        Тепперь можно отдохнуть 
+                    </div>
+                </div>
+            </div>
+            <div class="big-practice-11">
+                <div>
+                    <div class="cronitor">
+                        Cron tor
+                    </div>
+                    <div>
+                        <img class="i" src="../pictures/i.png">
+                    </div>
+                </div>
+                <div class="cron-job-monitoring">
+                    Cron Job Monitoring
+                </div>
+                <div>
+                    <div class="crontab-guru">
+                        crontab guru
+                    </div>
+                    <div class="text-46">
+                        The quick and simple editor for cron schedule expressions by 
+                        <span class="">
+                            <a href="html6" class="white">
+                                Cronitor
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <div class="italic text-47">“At 00:00 on Thursday.”></div>
+                    <div class="text-48">
+                        <a class="white text-50" href="htmml7">next</a>
+                        <span class="color-grey text-50">at 2020-07-21 00:00:00</span>
+                        <input class="date2" value="00**4">
+                        <div class="text-49">
+                            <a class="white" href="html8">random</a>
+                        </div>
+                        <span class="minute">
+                            <a class="color-grey " href="html9">minute</a>
+                        </span>
+                        <span class="hour">
+                            <a class="color-grey " href="html10">hour</a>
+                        </span>
+                        <span>
+                            <a class="color-grey day-month" href="html11">day</a>
+                            <div class="color-grey text-51">(month)</div>
+                        </span>
+                        <span class="month">
+                            <a class="month color-grey" href="html12">month</a>
+                        </span>
+                        <span>
+                            <a href="html13" class="day-week color-grey">day</a>
+                            <div class="color-grey text-52">(week)</div>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <div class="my-table3">
+                        <div>
+                            <div class="br-t">
+                            </div>
+                            <span class="my-table3-1">*</span>
+                            <div class="br-b">
+                            </div>
+                            <div class="my-table3-2 color-grey">
+                                any value
+                            </div>
+                        </div>
+                        <div>
+                            <div class="my-table3-3">
+                                ,
+                            </div>
+                            <div class="my-table3-4 color-grey">
+                                value list 
+                            </div>
+                            <div class="my-table3-5 color-grey">
+                                separator
+                            </div>
+                            <div class="br-b-1">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="my-table3-6">
+                                -
+                            </div>
+                            <div class="my-table3-7 color-grey">
+                                range of value
+                            </div>
+                            <div class="br-b-2">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="my-table3-8">
+                                /
+                            </div>
+                            <div class="my-table3-9 color-grey">
+                                step value
+                            </div>
+                            <div class="br-b-3">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="my-table3-10">
+                                @yearly
+                            </div>
+                            <div class="my-table3-11 color-grey">
+                                (non-standart)
+                            </div>
+                            <div class="br-b-4">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="my-table3-13">
+                                @annually
+                            </div>
+                            <div class="my-table3-14 color-grey">
+                                (non-standart)
+                            </div>
+                            <div class="br-b-4">
+                            </div>
+                        </div>
+                        <div class="my-table3-15">
+                            @monthly
+                        </div>
+                        <div class="my-table3-16 color-grey">
+                            (non-standart)
+                        </div>
+                        <div class="br-b-4">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="my-table3-17">
+                            @weekly
+                        </div>
+                        <div class="my-table3-18 color-grey">
+                            (non-standart)
+                        </div>
+                        <div class="br-b-4">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="my-table3-19">
+                            @daily
+                        </div>
+                        <div class="my-table3-20 color-grey">
+                            (non-standart)
+                        </div>
+                        <div class="br-b-4">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="my-table3-21">
+                            @hourly
+                        </div>
+                        <div class="my-table3-22 color-grey">
+                            (non-standart)
+                        </div>
+                        <div class="br-b-4">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="my-table3-23">
+                            @reboot
+                        </div>
+                        <div class="my-table3-24 color-grey">
+                            (non-standart)
+                        </div>
+                        <div class="br-b-4">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <span class="text-53">We created</span>
+                    <span>
+                        <a class="color-grey text-57" href="html14">Cronitor</a>
+                    </span>
+                    <span class="text-54">because cron itself can't alert you if your jobs fail or never start.</span>
+                    <span class="text-55">Cronitor is easy to integrate and provides you with instant alerts when things go wrong.</span>
+                    <span class="text-56">Learn more about</span>
+                    <span>
+                        <a class="white text-58" href="html15">cron job monitoring.</a>
+                    </span>
+                </div>
+                <div class="foot-cron-gore">
+                    <a class="white l-85" href="html17">examples</a>
+                    <a class="white l-115" href="html18">tips</a>
+                    <a class="white l-145" href="html19">man page</a>
+                    <a class="white l-175" href="html20">cron reference</a>
+                    <a class="white l-205" href="html21">cron monitoring</a>
+                    <a class="white l-240" href="html22">uptime monitoring</a>
+                    <a class="white l-270" href="html23">status pages</a>
+                </div>
+            </div>
+            <div class="big-practice-12">
+                <div>
+                    <div class="Blur-ph-onl">
+                        Blur photo onlines
+                    </div>
+                    <div class="select-a-picture">
+                        Select a picture on your computer or phone, specify the level of blur in the settings and then click OK. All other settings already installed by default.
+                    </div>
+                    <div class="example-photo">
+                        Example photo of a tulip without changes, then with default blur level and with hidh level of blur 
+                    </div>
+                    <div>
+                        <img class="flower" src="../pictures/flower.jpeg">
+                        <img class="flower2" src="../pictures/flower2.jpg">
+                        <img class="flower3" src="../pictures/flower3.jpg">
+                    </div>
+                    <div class="text-59">
+                        This website also has:
+                        <a href="html19">linear</a>
+                        ,
+                        <a href="html20">radial</a>
+                        and
+                        <a href="html21">circular</a>
+                        blurring of image
+                    </div>
+                    <div class="text-60">
+                        The original image is not changed. You will get other processed image.
+                    </div>
+                </div>
+                <div>
+                    <div class="br-2 t-135">
+                        1)
+                        <span class="fn-w-bl-black">
+                            Select image in BMP, GIF, JPEG, PNG, TIFF format:
+                        </span>
+                        <button class="t-r">Выберите файл</button>
+                        <span class="t-29-r-380">
+                            Файл не выбраны
+                        </span>
+                    </div>
+                    <div class="br-3">
+                        2)
+                        <span class="fn-w-bl-black br-b-1-grey">Settings for image blur</span>
+                        <span class="b-16 br-4">Blur level:</span>  
+                        <input class="but-5" value="">
+                        <span class="t-l">
+                            (from 1 to 300)
+                        </span>
+                    </div>
+                    <div class="br-5">
+                        <span class="br-b-5">
+                            3) Output image format
+                        </span>
+                        <div class="t-10">
+                            <input type="radio" name="contact" value="">
+                            JPEG
+                            <div class="custom-select">
+                                <select class="standard">
+                                    <option value="0">
+                                        standard
+                                    </option>
+                                </select>
+                                <div class="select-selected:after">
+                                </div>
+                            </div>
+                            <span class="b-l">
+                                with qualiti
+                            </span>
+                            <input class="but-6" value="">
+                            <span class="t-l-2">
+                                (from 1 to 300)
+                            </span>
+                        </div>
+                        <div class="b-30">
+                            <input type="radio" name="contact" value="">
+                            PNG-24
+                            (without compression, with transparency support)
+                            <div class="br-b-6">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="br-6">
+                        <button class="but-ok">OK</button>
+                        <span class="text-61">Procesing usually lasts for 0.5-20 seconds.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="flex">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="m-10 rounded-md flex flex-col some1 items-center">
+                            <img class="m-10" src="https://static.vecteezy.com/system/resources/thumbnails/002/264/822/small/sign-up-process-vector.jpg">
+                            <h3 class="m-10">
+                                Sign up
+                            </h3>
+                            <p class="m-10 text-center font-size-18">
+                                Are you looking to join online Learning? Now it's very simple,Now Sign up
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="m-10 rounded-md flex flex-col some1 items-center">
+                            <img class="m-10" src="https://www.ecmag.com/sites/default/files/styles/article_medium/public/Management%20August%202020.png?itok=Ee9lig2e">
+                            <h3 class="m-10">
+                                Collaborate
+                            </h3>
+                            <p class="m-10 text-center font-size-18">
+                                Collaborate on your own timing, by scheduling with mentor booking
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="m-10 rounded-md flex flex-col some1 items-center">
+                            <img class="m-10" src="https://img3.stockfresh.com/files/o/orla/m/12/7784745_stock-photo-arrows.jpg">
+                            <h3 class="m-10">
+                                Improve & Get Back
+                            </h3>
+                            <p class="m-10 text-center font-size-18">
+                                you can gather different skill set, and you can become mentor too
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    block 2
+                </div>
+            </div> 
+            <footer-component></footer-component>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous">
+        </script>
+        <script src="../components/header.js" type="text/javascript" defer></script>
+        <script src="../components/footer.js" type="text/javascript" defer></script>
+        <script type="text/javascript" src="../scripts/main.js"></script>
+    </body>
+</html>

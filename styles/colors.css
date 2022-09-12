@@ -1,0 +1,42 @@
+/* colors */
+.blue {
+    color: rgb(57, 127, 181);
+}
+
+/* text colors */
+.text-red {
+    color: red;
+}
+
+.text-blue {
+    color: rgb(79, 79, 209);
+}
+
+.text-olive {
+    color: olive;
+}
+
+.text-white {
+    color: white;
+}
+
+/* background colors */
+.bg-blue {
+    background-color: rgb(143, 246, 246);
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-brown {
+    background-color: rgb(92, 58, 43);
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-green {
+    background-color: green;
+}
