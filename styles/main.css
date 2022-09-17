@@ -35,10 +35,15 @@ header {
     position: relative;
 }
 
-.pizza {
-    width: 79%;
-    height: 313px;
-    position: absolute;
-    margin-top: 110px;
-    display: flex;
+.big-practice-16 {
+    width: 75%;
+    background-color: white;
+    height: 100%;
+    margin-left: 15%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.scroll {
+    overflow: scroll;
 }
