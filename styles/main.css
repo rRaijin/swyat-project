@@ -47,3 +47,11 @@ header {
 .scroll {
     overflow: scroll;
 }
+
+.y-scroll {
+    overflow-y: scroll;
+}
+
+.x-scroll {
+    overflow-x: scroll;
+}
