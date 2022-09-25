@@ -39,3 +39,12 @@ const arr3 = ['a', 23, 'м', {var1: 'х'}, 23, 'л', false, [5, 'і'], 'о', 'б
 
 // Домашнє завдання 2 піввищеної складності. Написати слово "ковбаса". Підказка можна вирішити 3 способами.
 const arr4 = ['ковба', 1, true, 'c'];
+
+
+
+const res2 = arr3[2] + arr3[8] + arr3[5] + arr3[8] + arr3[11] + arr3[8];
+console.log('result: ', res2);
+
+
+const res3 = arr4[0] + arr4[3] + arr4[0][4];
+console.log('result: ', res3);
