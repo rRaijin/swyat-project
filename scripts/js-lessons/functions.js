@@ -73,9 +73,34 @@ const x1 = func1('Svyat!');
 // console.log('x1: ', x1);
 // console.log('перемноження1 ', u);
 
+function mnojennya (z, y, x) {
+    // x = 3
+    // y = 2
+    // z = 0
+    const result = x * 5 + z; // 15
+    return result + y;
+}
+
+const z = mnojennya(0, 2, 3) * 2;
+console.log('results: ', q); // 34
 
 // Завдання №2. Скористатися функцією із завдання 1 для перемноження усіх чисел в массиві:
-const arr2 = [2, 3, 4, 5];
 // Відповідь записати тут
-const res4 = arr2[0] * [1] * [2] * [3]
-// console.log('перемноження2 ', res4);
+function mnojennya (z, y, x) {
+    // x = 3
+    // y = 2
+    // z = 0
+    const result = x * 5 + z; // 15
+    return result + y;
+}
+const o = mnojennya(0, 2, 3) * 2;
+console.log('results: ', ); // 34
+
+
+
+function mnojennya1 (m, j, g, l) {
+    const result1 = m * j * g * l;
+    return result1;
+}
+const arr2 = mnojennya1(2, 3, 4, 5);// 120
+console.log('res: ', arr2 ); 
