@@ -36,6 +36,32 @@
     border-radius: 15px;
 }
 
+.rounded-6px {
+    border-radius: 6px;
+}
+
+.rounded-100p {
+    border-radius: 100%;
+}
+
+.rounded-60px {
+    border-radius: 60px;
+}
+
+.rounded-bl-bt-6px {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.rounded-15px {
+    border-radius: 15px;
+}
+
+.rounded-13px {
+    border-radius: 13px;
+}
+
+
 /* width */
 .w-full {
     width: 100%;
@@ -75,9 +101,58 @@
     display: block;
 }
 
+.w-94p {
+    width: 920px;
+}
+
+.w-40px {
+    width: 40px;
+}
+
+.w-11p {
+    width: 11%;
+}
+
+.w-30p {
+    width: 30%;
+}
+
+.w-10p {
+    width: 10%;
+}
+
+.w-16p {
+    width: 16%;
+}
+
+
 /* height */
 .h-50 {
     height: 50%;
+}
+
+.h-60px {
+    height: 60px;
+}
+
+.h-70px {
+    height: 70%;
+}
+
+.h-74p {
+    height: 74%;
+}
+
+.h-110px {
+    height: 110px;
+}
+
+.h-40px {
+    height: 40px;
+}
+
+.h-200px {
+    height: 200px;
 }
 
 /* margin */
@@ -111,6 +186,46 @@
     margin-right: 5%;
 }
 
+.ml-3 {
+    margin-left: 3%;
+}
+
+.ml-2 {
+    margin-left: 2%;
+}
+
+.ml-55p {
+    margin-left: 55%;
+}
+
+.mt-5p {
+    margin-top: 5%;
+}
+
+.mt-2p {
+    margin-top: 2px;
+}
+
+.ml-60px {
+    margin-left: 60px;
+}
+
+.mb-10px {
+    margin-bottom: 10px;
+}
+
+.ml-10px {
+    margin-left: 10px;
+}
+
+.ml-14p {
+    margin-left: 14%;
+}
+
+.mt-30px {
+    margin-top: 30px;
+}
+
 /* padding */
 .px-10 {
     padding-left: 10px;
@@ -140,6 +255,34 @@
     padding-left: 50px;
 }
 
+.pl-10px {
+    padding-left: 10px;
+}
+
+.pt-1-5p {
+    padding-top: 1.5%;
+}
+
+.pl-1-5p {
+    padding-left: 1.5%;
+}
+
+.pl-8p {
+    padding-left: 8%;
+}
+
+.p-t-20px {
+    padding-top: 20px;
+}
+
+.pt-2p {
+    padding-top: 2%;
+}
+
+.pt-9px {
+    padding-top: 9px;
+}
+
 /* fonts */
 .bold {
     font-weight: bold;
@@ -157,6 +300,21 @@
     font-size: 9px;
 }
 
+.lt-spacing {
+    letter-spacing: 1px;
+}
+
+.font-size-20px {
+    font-size: 20px;
+}
+
+.font-size-13 {
+    font-size: 13px;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
 
 /* z-indexes */
 .z-0 {
@@ -179,4 +337,16 @@
 
 .brd-b-2 {
     border-bottom: 2px solid #e3e3e3;
+}
+
+.brd-1-white {
+    border: 2px solid white;
+}
+
+.brd-1-light-grey {
+    border-bottom: 1px solid #ccc;
+}
+
+.brd-0 {
+    border: 0;
 }
