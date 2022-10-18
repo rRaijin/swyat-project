@@ -283,6 +283,14 @@
     padding-top: 9px;
 }
 
+.pl-15px {
+    padding-left: 15px;
+}
+
+.pt-12px {
+    padding-top: 12px;
+}
+
 /* fonts */
 .bold {
     font-weight: bold;

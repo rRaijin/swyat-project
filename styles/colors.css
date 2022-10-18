@@ -36,6 +36,10 @@
     color: gray;
 }
 
+.text-lightgrey2 {
+    color: #939393;
+}
+
 /* background colors */
 .bg-blue {
     background-color: rgb(143, 246, 246);
