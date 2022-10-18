@@ -55,3 +55,12 @@ header {
 .x-scroll {
     overflow-x: scroll;
 }
+
+.main-content {
+    background-color: white;
+    height: 100%;
+    width: 82%;
+    margin-left: 10%;
+    margin-top: 2%;
+    padding-left: 2%;
+}
