@@ -7,13 +7,11 @@ const str7 = 8;
 const str8 = 7;
 
 function evenNumber(x) {
-    let result = x * 2;
-    if (typeof x === x%2===0) {
+    if (x%2 === 0) {
         return x;
     } else {
-      result;  
+        return x * 2;
     }
-    return result;
 }
 console.log(evenNumber(str5));
 console.log(evenNumber(str6));
@@ -74,3 +72,24 @@ console.log(arr90);
 // }
 
 // console.log(collectEvenNumbers(arr1)); // "0" також є парним числом
+
+
+
+
+// 3
+const x = 4;
+const y = 4;
+const z = x + y;
+console.log(z);
+
+function some1(x, y) {
+    let p;
+    if (x > y) {
+        p = x + y;
+    } else if (x === y) {
+        p = x * y;
+    } else if (y === 45) {
+
+    }
+    return p;
+}
