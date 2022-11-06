@@ -47,24 +47,54 @@ console.log('Result 2: ', res2);
 // ми ітеруємось по масиву "items", і як тільки знаходимо ПЕРШИЙ об'єкт у ньому, для усіх його пар ключ-значення збільшуємо
 // значення на ЦЕ число, яке приймає функція.
 const items = [1, 'a', {x: 1, y: 2}, 45, 'abc', {a: 1}];
-
-const c = 5; 
-
-
-
 function homework2(c) {
-    let result = 0;
     for (let i = 0; i < items.length; i++) {
         const element = items[i];
-        if (typeof items[i] === 'object') {
-            for (let x in object) {
-                return x;
+        if (typeof element === 'object') {
+            console.log('До змінення: ', element);
+            for (let j in element) {
+                element[j] = element[j] + c;
             }
+            console.log('Після змінення: ', element);
+            break;
         }  
-}  
-
+    }  
 }
+homework2(15);
+homework2(5);
+homework2(1); // 22
 
+function homework2extended(c) {
+    for (let k = 0; k < [1, 2, 3, 4].length; k++) { // чотири ітерції буде додавати по 100
+        console.log('parent lvl: ', [1, 2, 3, 4][k]); // перша інструкція
+        for (let i = 0; i < items.length; i++) { // друга інструкція. Весь внутрішній цикл FOR - інструкція
+            const element = items[i];
+            if (typeof element === 'object') {
+                console.log('До змінення: ', element);
+                for (let j in element) {
+                    element[j] = element[j] + c;
+                }
+                console.log('Після змінення: ', element);
+                break;
+            }  
+        }  
+    }
+}
+homework2extended(100); // 422
+console.log('FINAL: ', items);
 
 // ПІДКАЗКА 1: Щоб перевірити що це об'єкт ---   typeof items[i] === 'object'
 // ПІДКАЗКА 2: У рішенні буде використовуватись IF, FOR, FOR/IN
+
+
+function test() {
+    console.log('OK');    
+}
+
+test();
+test();
+
+const sx1 = [1, 2, 3, 4];
+for (let i = 0; i < sx1.length; i++) {
+    test();
+}
