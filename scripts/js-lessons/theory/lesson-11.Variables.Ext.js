@@ -16,5 +16,5 @@ let var1 = {name: 'Jim'}; // перша ячейка пам'яті
 let var2 = var1; // та ж сама перша ячейка пам'яті
 var2.name = 'John';
 
-console.log(var1); // Jim 
+console.log(var1); // John 
 console.log(var2); // John
