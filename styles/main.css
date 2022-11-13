@@ -27,6 +27,10 @@ header {
     text-transform: uppercase;
 }
 
+.text-dec-underline {
+    text-decoration: underline;
+}
+
 .absolute {
     position: absolute;
 }
@@ -63,4 +67,42 @@ header {
     margin-left: 10%;
     margin-top: 2%;
     padding-left: 2%;
+}
+
+.big-practice-17 {
+    width: 100%;
+    background-color: white;
+    height: 690px;
+    margin-right: 2%;
+    display: flex;
+}
+
+.fl-right{
+    float: right;
+}
+
+.brd-b-blue {
+    text-decoration: none;
+    transition: color 0s linear;
+    color: #000000;
+    width: 105px;
+    margin-left: 20px;
+}
+
+.brd-b-blue:hover {
+    color:black;
+    border-bottom: 3px solid rgb(0, 187, 255);
+}
+
+.brd-b-blue2 {
+    text-decoration: none;
+    transition: color 0s linear;
+    color: #000000;
+    width: 46px;
+    margin-left: 20px;
+}
+
+.brd-b-blue2:hover {
+    color:black;
+    border-bottom: 3px solid rgb(0, 187, 255);
 }
