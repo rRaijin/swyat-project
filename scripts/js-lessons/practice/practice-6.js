@@ -101,43 +101,32 @@ for (let i = 0; i < sx1.length; i++) {
 
 
 // Завдання №3. Написати функцію, яка приймає массив чисел, повертає новий масив із цих чисел, збільшених вдвічі.
-
-
 const arr3 = [10,20,30,40,50];
 
-function homework3(arr3) {
-    for (let index = 0; index < arr3.length; index++) {
-        const element = arr3[index];
-        return element * 2;
-        
+function homework3(array) {
+    const newArray = [];
+    for (let index = 0; index < array.length; index++) {
+        const element = array[index];
+        console.log('iteration: ', index);
+        const elementX2 = element * 2;
+        newArray.push(elementX2);
     }
+    return newArray;
 }
-
 
 const res3 = homework3(arr3);
 console.log('homework3 ', res3);
 
 
-
-
-
-
-
-
-
-
-
 // Завдання №4. Написати функцію, яка приймає масив строк, до кожної строки додає літеру "а",
 // та виводить у консоль лог на кожній ітерації, функція не повертає результат.
-
-
 const arrstr = ["черг","жінк","акул"];
 
-function homework4(arrstr) {
-    for (let index = 0; index < arrstr.length; index++) {
-        const element = arrstr[index];
-        element.push("a")
-        console.log(element)
-        
+function homework4(data) {
+    for (let index = 0; index < data.length; index++) {
+        const element = data[index];
+        const result = element + 'a';
+        console.log(result);
     }
 }
+homework4(arrstr);
