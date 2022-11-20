@@ -1,29 +1,29 @@
 // Інструкції переходу -- break
 
-// const x = 10;
-// const arr = [3, 'fgh', null, 8, 10, 'a', 90]; // 7 ітерацій
+const x = 10;
+const arr = [3, 'fgh', null, 8, 10, 'a', 90]; // 7 ітерацій
 
-// for (let i = 0; i < arr.length; i++) {
-//     const el = arr[i];
-//     if (el === 10) {
-//         console.log('el: ', el);
-//         break;
-//     }
-//     console.log('el222222: ', el);
-// }
+for (let i = 0; i < arr.length; i++) {
+    const el = arr[i];
+    if (el === 10) {
+        console.log('el: ', el);
+        break;
+    }
+    console.log('el222222: ', el);
+}
 
 // continue
-// const arr2 = [5, 10, 15, 20, 50, 100];
-// for (let j = 0; j < arr2.length; j++) {
-//     const g = arr2[j];
-//     if (g < 50) {
-//         console.log('res: ', g * 2);
-//         continue;
-//     }
+const arr2 = [5, 10, 15, 20, 50, 100];
+for (let j = 0; j < arr2.length; j++) {
+    const g = arr2[j];
+    if (g < 50) {
+        console.log('res: ', g * 2);
+        continue;
+    }
 
-//     const x = 100;
-//     console.log('g: ', g * x);
-// }
+    const x = 100;
+    console.log('g: ', g * x);
+}
 
 
 const obj = {
