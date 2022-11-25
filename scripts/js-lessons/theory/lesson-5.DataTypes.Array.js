@@ -21,3 +21,9 @@ const b = myArr3[5][2];
 myArr3.push(9);
 console.log('После: ', myArr3);
 
+const arr2 = [1, 3, 5, 7, 9];
+// обходить весь массив
+for (let index = 0; index < arr2.length; index++) {
+    arr2[index]++;
+}
+console.log(arr2);
