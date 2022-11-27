@@ -5,17 +5,14 @@ const c = 50;
 const arr1 = [5,10,15]
 
 function plus50(array) {
-    const newArray = [];
     for (let index = 0; index < array.length; index++) {
         const element = array[index];
         const res = element + c;
-        newArray.push(res);
+        console.log(res)
     }
-    return newArray
 }
 
-const qq = plus50(arr1);
-console.log('resultat: ', qq);
+plus50(arr1);
 
 const x = 5;
 // Завдання 2. Написати функцію, яка приймає числа: 1, 2 або 3 (тільки саме ці числа вона обробляє, примати може що завгодно),
@@ -32,7 +29,7 @@ function homework2(q) {
             break;
 
         case 2:
-            result1 = q;
+            result1 = 2;
             break;
 
         case 3:
@@ -40,13 +37,12 @@ function homework2(q) {
             break;    
 
         default:
-            result1 = 'Не підходить'
             break;
     }
     return result1;
 }
 
-console.log(homework2(67));
+console.log(homework2(3));
 
 
 
@@ -55,39 +51,16 @@ const arr2 = [3];
 const t = 100;
 
 function funcforhom3(array) {
-    for (let index = 0; index < array.length; index++) {
-        const element = array[index];
-        const res1 = element + t;
-        console.log(res1)
-    }
+        for (let index = 0; index < array.length; index++) {
+            const element = array[index];
+            const res1 = element + t;
+            console.log(res1)
+        }
+}
+funcforhom3(arr2)
+
+function homework3(funcforhom3) {
+    return res2 = funcforhom3;
 }
 
-function cl() {
-    console.log('Я працюю!!!');
-}
-
-function homework3(func, args) {
-    return args ? func(args): func();
-}
-
-homework3(cl);
-homework3(funcforhom3, arr2);
-
-// 4
-function parne(y) {
-    console.log(`${y} - це парне число, ${y - 5}`);
-}
-
-function neParne(y) {
-    console.log(String(y), '- це непарне число');
-}
-
-function hw4(x) {
-    if (x%2 === 0) {
-        parne(x);
-    } else {
-        neParne(x);
-    }
-}
-
-hw4(10);
+console.log(homework3(res2))
