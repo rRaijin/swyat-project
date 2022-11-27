@@ -50,7 +50,7 @@ console.log(homework2(3));
 const arr2 = [3];
 const t = 100;
 
-function funcforhom3(array) {
+function funcforhome3(array) {
         for (let index = 0; index < array.length; index++) {
             const element = array[index];
             const res1 = element + t;
