@@ -1,0 +1,62 @@
+.header-forjs {
+    color: white;
+    background-color: cadetblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    font-size: 45px;
+    margin: 0;
+}
+
+.lesson-block {
+    background-color: #fff;
+}
+
+.lesson-block>h2 {
+    background-color: #4097df;
+    color: white;
+    padding: 5px;
+    margin: 0;
+    border-top: 2px solid #fffcfc;
+}
+
+.lesson-block>h3 {
+    text-align: center;
+    background-color: bisque;
+    margin: 0;
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+.lesson-block>div {
+    padding: 10px;
+    background-color: #cdcfd1;
+}
+
+.lesson-block>div>a {
+    color: #3812c2;
+    font: bold;
+    font-size: 20px;
+    display: block;
+}
+
+.lesson-block>div>ul>li {
+    font-size: 18px;
+}
+
+.lesson-block>div>ul>li>strong {
+    font-size: 18px;
+    color: rgb(180, 76, 16);
+}
+
+.lesson-block>div>p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.lesson-block>div>p>span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0f5c2c;
+}
