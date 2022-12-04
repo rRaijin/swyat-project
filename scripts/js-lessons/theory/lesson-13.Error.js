@@ -5,22 +5,22 @@
 // виконання. Об'єкт Error також може використовуватися як базовий для винятків. Дивіться нижче стандартні типи помилок.
 
 
-// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Error
-// const myErr = new Error('Моя помилка.');
-// console.log(myErr);
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Error
+const myErr = new Error('Моя помилка.');
+console.log(myErr);
 
-// const myErrType = new TypeError('Неприпустимий тип.');
-// function getNumber(x) {
-//     if (typeof x === 'number') {
-//         console.log('x: ', x);
-//     } else {
-//         // console.log(myErrType);
-//         throw myErrType;
-//     }
-// }
+const myErrType = new TypeError('Неприпустимий тип.');
+function getNumber(x) {
+    if (typeof x === 'number') {
+        console.log('x: ', x);
+    } else {
+        // console.log(myErrType);
+        throw myErrType;
+    }
+}
 
-// getNumber(4);
-// getNumber('abc');
+getNumber(4);
+getNumber('abc');
 
 
 // Конструкція try...catch намагається виконати інструкції у блоці try, та, у випадку помилки, виконує блок catch.
