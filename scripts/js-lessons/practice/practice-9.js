@@ -10,6 +10,4 @@ function homework1(x) {
         console.log(Err)
     }
 }
-homework1(6)
-
-
+homework1(6);

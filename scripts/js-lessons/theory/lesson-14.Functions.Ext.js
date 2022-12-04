@@ -1,18 +1,37 @@
 // this - Свойство контекста выполнения кода, которое в нестрогом режиме всегда является ссылкой на объект, 
 // а в строгом режиме может иметь любое значение('use strict').
-console.log('global this: ', this);
+
+
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/this
+
+// https://developer.mozilla.org/ru/docs/Web/API/Window
+
+// https://developer.mozilla.org/ru/docs/Web/API/Document/getElementById
+
+
+// console.log('global this: ', this);
 function strictThis() {
-    'use strict'
+    // 'use strict'
     return this;
 }
 
-console.log('in strict mode: ', strictThis());
+// console.log('in strict mode: ', strictThis());
 // В большинстве случаев значение this определяется тем, каким образом вызвана функция. Поки що все, це перше знайомство
 
-function Human(name, age, force = false) {
+// const myObj = {
+//     x: 1,
+//     y: 1,
+//     print: function() {
+//         console.log('sdafsdfs');
+//     }
+// }
+// myObj.z = 3;
+// console.log(myObj.print());
+function Human(name, age, force = false) { // значення по умолчанию для force
     this.gender = 'male';
     this.name = name;
     this.age = age;
+    this.x = 345;
 
     this.getThis = function() {
         console.log('This ==> ', this);
@@ -27,7 +46,7 @@ function Human(name, age, force = false) {
     }
 
     if (force) {
-        document.getElementById('lesson-15').innerText = `User: ${this.name}, age: ${this.age}`;
+        this.render();
     }
 }
 
@@ -36,11 +55,11 @@ function Human(name, age, force = false) {
 // }
 
 const human_one = new Human('Vasil', 23);
-console.log('data: ', human_one);
-human_one.getInfo();
-human_one.getThis();
+// console.log('data: ', human_one);
+// human_one.getInfo();
+// human_one.getThis();
 human_one.render();
 
 function addNewHuman() {
-    return new Human('New User', 36, true);
+    return new Human('Svyat', 13, true);
 }
