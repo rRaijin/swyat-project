@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<html>
+    <head-component></head-component>
+    <head>
+        <meta charset="utf-8">
+        <title>JS Course</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous">
+        </script>
+        <script src="../components/header.js" type="text/javascript" defer></script>
+        <script src="../components/footer.js" type="text/javascript" defer></script>
+        <script type="text/javascript" src="../scripts/main.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <header-component></header-component>
+            <div id="main">
+                <nav id="topbar">
+                    <li>
+                        <a href="./index.html">
+                            <i class="fa fa-home"></i> home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./js-theory.html">
+                            <i class="fa fa-pencil"></i> JS Theory
+                        </a>
+                    </li>
+                </nav>
+                <div>
+                    <h1 class="header-forjs">JavaScript</h1>
+                    <div class="lesson-block">
+                        <h2>Lesson 1</h2>
+                        <h3>Ідентифікатори.</h3>
+                        <div>
+                            <p>
+                                <span>Ідентифікатор</span> - послідовність символів у коді, які визначають змінну, функцію чи властивість.
+                            </p>
+                            <p>
+                                У JavaScript, ідентифікатори можуть містити лише літери, цифри (0-9), "$" та "_", і не можуть 
+                                починатися з цифри. Ідентифікатор відрізняється від рядка (string) у тому, 
+                                що рядок – це дані, тоді як ідентифікатор є частиною коду.
+                            </p>
+                            <p>
+                                <span>Зарезервовані слова</span> - ідентифікатори, що використовуються як ключові слова мови JavaScript.
+                                Їх не можна використовувати для ідентифікації інших сущностей при написанні коду.
+                            </p>
+                        </div>
+            
+                        <h3>Змінні.</h3>
+                        <div>
+                            <p>
+                                Змінні є контейнерами для зберігання даних (зберігання значень даних).
+                            </p>
+                            <ul>
+                                <li><strong>const</strong><span> - постійна(константа), не може змінюватись</span></li>
+                                <li><strong>let</strong><span> - може змінюватись</span></li>
+                                <li><strong>var</strong><span> - може змінюватись</span></li>
+                            </ul>
+                            <a href="https://www.w3schools.com/js/js_variables.asp">Більше про змінні.</a>
+                        </div>
+                        <h3>Console</h3>
+                        <div>
+                            <p>На першому етапі ми працюємо тільки з методом log()</p>
+                            <p>Для більшої наглядності деякі нюанси перелічені разом з прикладами у файлі: <strong>lesson-1.Variables.js</strong></p>
+                            <a href="https://developer.mozilla.org/ru/docs/Web/API/Console">Більше про Console.</a>
+                        </div>
+                    </div>
+                    <div class="lesson-block">
+                        <h2>Lesson 2</h2>
+                        <h3>Типи даних. String(Рядок, російською - строка).</h3>
+                        <div>
+                            <p>Рядок - незмінна впорядкована послідовність 16-бітових значень, кожне з яких зазвичай представляє символ Unicode.</p>
+                            <p>Щоб записати рядковий літерал використовуються подвійні, одинарні та спеціальні(як апостроф) лапки.</p>
+                            <a href="https://developer.mozilla.org/ru/docs/Web/API/Console">Більше про рядки.</a>
+                            <a href="https://mathiasbynens.be/notes/javascript-escapes">Більше про Esc-послідовності.</a>
+                        </div>
+                        <h3>Конкатенація.</h3>
+                        <div>
+                            <p>Склеювання об'єктів лінейної структури, зазвичай - строк.</p>
+                        </div>
+                        <h3>Оператор typeof.</h3>
+                        <div>
+                            <p>Результатом виконання цього оператора отримаємо тип даних сутності, до якої було застосовано.</p>
+                            <p>Більш подробно у файлі <strong>lesson-2.DataTypes.String.js</strong></p>
+                        </div>
+                    </div>
+                    <div class="lesson-block">
+                        <h2>Lesson 3</h2>
+                        <h3>Типи даних. Number(Число).</h3>
+                        <div>
+                            <p>Основні системи обчислення:</p>
+                            <ul>
+                                <li>двійкова</li>
+                                <li>восьмирічна</li>
+                                <li>десяткова</li>
+                                <li>16-річна (починається з префікса 0x або 0X)</li>
+                            </ul>
+                        </div>
+                        <h3>Типи даних. Boolean(Булево значення)</h3>
+                        <div>
+                            <p>Має лише 2 стана: true або false.</p>
+                            <p>Більш подробно у файлі <strong>lesson-2.DataTypes.Number.js</strong></p>
+                        </div>
+                    </div>
+                    <div class="lesson-block">
+                        <h2>Lesson 4</h2>
+                        <h3>Оператори. Арифметичні оператори.</h3>
+                        <div>
+                            <ul>
+                                <li>Множення (*)</li>
+                                <li>Поділ (/)</li>
+                                <li>Поділ за модулем (%) - повертається залишок від цілочисленого поділу</li>
+                                <li>Додавання (+)</li>
+                                <li>Віднімання (-)</li>
+                                <li>Інкремент (++)</li>
+                                <li>Декремент (++)</li>
+                                <li>Інші...</li>
+                            </ul>
+                        </div>
+                        <h3>Оператори. Оператори порівняння.</h3>
+                        <div>
+                            <ul>
+                                <li>Рівність(==)</li>
+                                <li>Сувора рівність(===)</li>
+                                <li>Нерівність(!=)</li>
+                                <li>Сувора нерівність(!==)</li>
+                                <li>Менше(<)</li>
+                                <li>Менше або дорівнює(<=)</li>
+                                <li>Більше(>)</li>
+                                <li>Більше або дорівнює(>=)</li>
+                                <li>
+                                    Два оператори порівняння є ключовими словами(а не символами): 
+                                    <strong>in</strong> та <strong>instanceof</strong>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>Оператори. Логічні оператори.</h3>
+                        <div>
+                            <p>Більш подробно у файлі <strong>lesson-4.Operations.Algebra.js</strong></p>
+                        </div>
+                    </div>
+                    <div class="lesson-block">
+                        <h2>Lesson 5</h2>
+                        <h3>Типи даних. Array(Масив).</h3>
+                        <div>
+                            <p>
+                                Є глобальним об'єктом, що використовується для створення масивів, 
+                                які є високорівневими спископодібними об'єктами.
+                            </p>
+                            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array">
+                                Більше про масиви.
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lesson-block">
+                        <h2>Lesson 6</h2>
+                        <h3>Інструкції. Умовна інструкція <strong>IF...ELSE</strong></h3>
+                        <div>
+                            <p>
+                                Виконує інструкцію, якщо зазначена умова виконується (істинно). 
+                                Якщо умова не виконується (хибно), може бути виконана інша інструкція.
+                            </p>
+                            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/if...else">
+                                Більше про інструкцію IF...ELSE.
+                            </a>
+                        </div>
+                        <h3>Тернарний оператор.</h3>
+                        <div>
+                            <p>По своїй суті це інструкція IF...ELSE яка написана у одну строку, має вигляд: умова ? виконати якщо правда : виконати якщо ні</p>
+                        </div>
+                    </div>
+                    <div class="lesson-block">
+                        <h2>Lesson 7</h2>
+                        <h3>Функції.</h3>
+                        <div>
+                            <p>
+                                <span>Оголошення функції</span>(класична форма за допомогою виразу, має контекст).
+                                Складається із ключового слова function, потім йде блок з параметрами і тіло самої функції:
+                            </p>
+                            <p>function (список параметрів) {тіло функції - блок коду, що виконується}</p>
+                            <p>
+                                <span>Визов функції.</span> Звернення за ім'ям функції та передаванням параметрів, якщо потрібні.
+                                Якщо функція повертає результат та є необхідність його подальшого використання, він записається до змінної.
+                                Щоб повернути результат виконання тіла функції використовується ключове слово <strong>return</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lesson-block">
+                        <h2>Lesson 8</h2>
+                        <h3>Оператор Switch-Case</h3>
+                        <div>
+                            <p>
+                                Инструкція switch порівнює вираз з випадками, переліченими в середині неї, і потім виконує відповідні інструкції.
+                                Умовно кажучи за своєю суттю це великий набір if-else.
+                            </p>
+                            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/switch">
+                                Більше про інструкцію SWITCH.
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lesson-block">
+                        <h2>Lesson 9</h2>
+                        <h3>Цикли While, Do...While, For...in, For</h3>
+                        <div>
+                            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/while">
+                                Більше про інструкцію While.
+                            </a>
+                            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/do...while">
+                                Більше про інструкцію Do...While.
+                            </a>
+                            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for">
+                                Більше про інструкцію For.
+                            </a>
+                            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for...in">
+                                Більше про інструкцію For...in.
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lesson-block">
+                        <h2>Lesson 10</h2>
+                        <h3>Continue...break</h3>
+                        <div>
+                            <p>
+                                Инструкція continue перериває виконання поточної ітерації поточного або відміченого циклу, і продовжує 
+                                його виконання на наступній ітерації.
+                            </p>
+                            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for...in">
+                                Більше про інструкцію Continue...break.
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lesson-block">
+                        <h2>Lesson 11</h2>
+                        <h3>Змінна за посиланням чи за значенням.</h3>
+                        <div>
+                            <p>Маємо 2 архігрупи типів даних</p>
+                            <ul>
+                                <li>Примітивні(за значенням): string, number, boolean, null, undefined</li>
+                                <li>Об'єктні(за посиланням): Object, Array, Function</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lesson-block">
+                        <h2>Lesson 12</h2>
+                        <h3>Змінна за посиланням чи за значенням.</h3>
+                        <div>
+                            <a href="http://xn--80adth0aefm3i.xn--j1amh/%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%20%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%96%20%D0%B7%D0%BC%D1%96%D0%BD%D0%BD%D0%B8%D1%85">
+                                Більше.
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lesson-block">
+                        <h2>Lesson 13</h2>
+                        <h3>Глобальний об'єкт Error</h3>
+                        <div>
+                            <p>
+                                <span>Глобальний об'єкт</span> - вбудований об'єкт JavaScript, призначений для важливої мети: властивості цього об'єкту
+                                є глобальними сутностями, доступними в будь-якому місці програми.
+                            </p>
+                            <p>
+                                <span>Конструктор Error</span> створює об'єкт помилки. Примірники Errorоб'єкта викидаються при виникненні помилок під час 
+                                виконання. Об'єкт Error також може використовуватися як базовий для винятків. Дивіться нижче стандартні типи помилок.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lesson-block">
+                        <h2>Lesson 14</h2>
+                        <h3>Try...catch...finally</h3>
+                        <div>
+                            <p>
+                                Конструкція try...catch намагається виконати інструкції у блоці try, і, у разі помилки, виконує блок catch.
+                            </p>
+                            <p>
+                                Якщо вказан необов'язковий блок finally - інстуркції в середині цього блоку будуть виконані обов'зково.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lesson-block mb-40px">
+                        <h2>Lesson 15</h2>
+                        <button onClick="addNewHuman();">BUTTON</button>
+                        <div id="lesson-15" class=" mb-40px"></div>
+                        <div>&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer-component></footer-component>
+<!-- theory scripts enable -->
+        <!-- <script type="text/javascript" src="../scripts/js-lessons/theory/lesson-1.Variables.js"></script> -->
+        <!-- <script type="text/javascript" src="../scripts/js-lessons/theory/lesson-2.DataTypes.String.js"></script> -->
+        <!-- <script type="text/javascript" src="../scripts/js-lessons/theory/lesson-3.DataTypes.Number.js"></script> -->
+        <!-- <script type="text/javascript" src="../scripts/js-lessons/theory/lesson-4.Operations.Algebra.js"></script> -->
+        <!-- <script type="text/javascript" src="../scripts/js-lessons/theory/lesson-5.DataTypes.Array.js"></script> -->
+        <!-- <script type="text/javascript" src="../scripts/js-lessons/theory/lesson-6.Instructions.If-Else.js"></script> -->
+        <!-- <script type="text/javascript" src="../scripts/js-lessons/theory/lesson-7.Functions.js"></script> -->
+        <!-- <script type="text/javascript" src="../scripts/js-lessons/theory/lesson-8.Switch-Case.js"></script> -->
+        <!-- <script type="text/javascript" src="../scripts/js-lessons/theory/lesson-9.Do-While.js"></script> -->
+        <!-- <script type="text/javascript" src="../scripts/js-lessons/theory/lesson-10.Continue-Break.js"></script> -->
+        <!-- <script type="text/javascript" src="../scripts/js-lessons/theory/lesson-11.Variables.Ext.js"></script> -->
+        <!-- <script type="text/javascript" src="../scripts/js-lessons/theory/lesson-12.Closures.Visibility.js"></script> -->
+        <!-- <script type="text/javascript" src="../scripts/js-lessons/theory/lesson-13.Error.js"></script> -->
+        <script type="text/javascript" src="../scripts/js-lessons/theory/lesson-14.Functions.Ext.js"></script>
+
+<!-- practice scripts enable -->
+        <!-- <script type="text/javascript" src="../scripts/js-lessons/practice/practice-1.js"></script> -->
+        <!-- <script type="text/javascript" src="../scripts/js-lessons/practice/practice-2.js"></script> -->
+        <!-- <script type="text/javascript" src="../scripts/js-lessons/practice/practice-3.js"></script> -->
+        <!-- <script type="text/javascript" src="../scripts/js-lessons/practice/practice-4.js"></script> -->
+        <!-- <script type="text/javascript" src="../scripts/js-lessons/practice/practice-5.js"></script> -->
+        <!-- <script type="text/javascript" src="../scripts/js-lessons/practice/practice-6.js"></script> -->
+        <!-- <script type="text/javascript" src="../scripts/js-lessons/practice/practice-7.js"></script> -->
+        <!-- <script type="text/javascript" src="../scripts/js-lessons/practice/practice-8.js"></script> -->
+        <!-- <script type="text/javascript" src="../scripts/js-lessons/practice/practice-9.js"></script> -->
+    </body>
+</html>

@@ -1,0 +1,71 @@
+// imports
+@import ../reset.css
+@import ../forjs.css
+
+
+// colors variables
+$yale-light: #146dd1
+$yale: #1055a3
+$yale-dark: #0b3d74
+
+$stone-light: #dad8d7
+$stone: #c2bebd
+$stone-dark: #a9a4a2
+
+
+// global styles
+header 
+    display: flex
+
+#container
+    width: 1200px
+    margin: 0 auto
+    background-color: $stone-light
+
+// second navigation
+#topbar
+    display: flex
+    background-color: $yale
+
+    li
+        width: 10%
+        padding: 10px 0
+        position: relative
+        text-align: center
+        &:hover
+            background-color: $yale-dark
+        a
+            text-decoration: none
+            color: white
+            text-transform: uppercase
+            font-weight: bold 
+
+.drop
+    width: 100%
+    background-color: $yale-light
+    padding: 0
+    margin: 0
+    text-align: center
+    font-size: 25px
+    li
+        padding: 10px 0
+        &:hover
+            background-color: $yale-light
+            cursor: pointer
+
+.logotype
+    width: 25%
+
+.menu
+    width: 65%
+    text-align: center
+
+.auth
+    width: 10%
+
+.authors-list
+    display: flex
+    flex-wrap: wrap
+    div.author,div
+        border: 1px solid white
+        width: 25%

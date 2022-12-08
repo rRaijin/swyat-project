@@ -1,0 +1,69 @@
+@import "../reset.css";
+@import "../forjs.css";
+header {
+  display: flex;
+}
+
+#container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #dad8d7;
+}
+
+#topbar {
+  display: flex;
+  background-color: #1055a3;
+}
+#topbar li {
+  width: 10%;
+  padding: 10px 0;
+  position: relative;
+  text-align: center;
+}
+#topbar li:hover {
+  background-color: #0b3d74;
+}
+#topbar li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.drop {
+  width: 100%;
+  background-color: #146dd1;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 25px;
+}
+.drop li {
+  padding: 10px 0;
+}
+.drop li:hover {
+  background-color: #146dd1;
+  cursor: pointer;
+}
+
+.logotype {
+  width: 25%;
+}
+
+.menu {
+  width: 65%;
+  text-align: center;
+}
+
+.auth {
+  width: 10%;
+}
+
+.authors-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.authors-list div.author, .authors-list div {
+  border: 1px solid white;
+  width: 25%;
+}/*# sourceMappingURL=style.css.map */

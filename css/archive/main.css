@@ -1,0 +1,71 @@
+@import './reset.css';
+@import './forjs.css';
+
+header {
+    display: flex;
+}
+
+#container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color:#f5f5dc;
+}
+
+#main {
+    background-color:rgb(223, 217, 211);
+}
+
+/*  second navigation */
+#topbar {
+	display: flex;
+	background: #3B5D80;
+}
+
+#topbar > li {
+    width: 10%;
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+}
+
+#topbar > li > a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;  
+}
+
+#topbar > li:hover {
+	background: #304963;
+}
+
+.drop {
+    width: 100%;
+    background-color:#ccc;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+.drop > li {
+    padding: 10px 0;
+}
+
+.drop > li:hover {
+    background-color: rgb(96, 131, 197);
+    cursor: pointer;
+}
+
+.logotype {
+    width: 25%;
+}
+
+.menu {
+    width: 65%;
+    text-align: center;
+}
+
+.auth {
+    width: 10%;
+}
