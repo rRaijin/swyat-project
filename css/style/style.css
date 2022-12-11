@@ -1,5 +1,5 @@
 @import "../reset.css";
-@import "../forjs.css";
+@import "../forjs/forjs.css";
 header {
   display: flex;
 }
