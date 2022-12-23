@@ -36,6 +36,10 @@
     border-radius: 15px;
 }
 
+.rounded-7px {
+    border-radius: 7px;
+}
+
 .rounded-6px {
     border-radius: 6px;
 }
@@ -89,7 +93,19 @@
     border-radius: 38px;
 }
 
+.rounded-blue-2px {
+    border-bottom: 2px solid #2527a3;
+}
+
 /* width */
+.w-70p {
+    width: 70%;
+}
+
+.w-15p {
+    width: 15%;
+}
+
 .w-0 {
     width: 0px;
 }
@@ -106,6 +122,10 @@
     width: 40%;
 }
 
+.w-65p {
+    width: 65%;
+}
+
 .w-50 {
     width: 50%;
 }
@@ -118,8 +138,16 @@
     width: 33.333333333%;
 }
 
+.w-45p {
+    width: 45%;
+}
+
 .w-85 {
     width: 85%;
+}
+
+.w-15p {
+    width: 15%;
 }
 
 .w-110p-block {
@@ -144,8 +172,24 @@
     width: 11%;
 }
 
+.w-87p {
+    width: 87%;
+}
+
+.w-25p {
+    width: 25%;
+}
+
+.w-28p {
+    width: 28%;
+}
+
 .w-30p {
     width: 30%;
+}
+
+.w-23p {
+    width: 23%;
 }
 
 .w-10p {
@@ -168,6 +212,14 @@
     width: 88%;
 }
 
+.w-2p {
+    width: 2%;
+}
+
+.w-33p {
+    width: 33%;
+}
+
 .w-320px {
     width: 320px;
 }
@@ -184,7 +236,27 @@
     width: 160px;
 }
 
+.w-55p {
+    width: 55%;
+}
+
+.w-36p {
+    width: 36%;
+}
+
 /* height */
+.h-100p {
+    height: 100%;
+}
+
+.h-10p {
+    height: 10%;
+}
+
+.h-26p {
+    height: 26%;
+}
+
 .h-50 {
     height: 50%;
 }
@@ -233,6 +305,10 @@
     height: 310px;
 }
 
+.h-56p {
+    height: 56%;
+}
+
 .h-190px {
     height: 190px;
 }
@@ -245,14 +321,34 @@
     height: 82px;
 }
 
+.h-13px {
+    height: 13px;
+}
+
 /* margin */
+.m-1p {
+    margin-left: 1%;
+}
+
 .m-10 {
     margin: 10px;
+}
+
+.mt-7p {
+    margin-top: 7%;
 }
 
 .my-50 {
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.mt-2p {
+    margin-top: 2%;
+}
+
+.ml-5p {
+    margin-left: 5%;
 }
 
 .my-40 {
@@ -284,6 +380,14 @@
     margin-left: 2%;
 }
 
+.ml-45p {
+    margin-left: 45%;
+}
+
+.mt--36p {
+    margin-top: -36%;
+}
+
 .mr-2 {
     margin-right: 2%;
 }
@@ -292,16 +396,20 @@
     margin-left: 55%;
 }
 
+.mt--15p {
+    margin-top: -15%;
+}
+
 .mt-5p {
     margin-top: 5%;
 }
 
-.mt-2p {
-    margin-top: 2px;
-}
-
 .ml-60px {
     margin-left: 60px;
+}
+
+.mt-4p {
+    margin-top: 4%;
 }
 
 .mb-10px {
@@ -344,6 +452,10 @@
     margin-top: -430px;
 }
 
+.mt-13p {
+    margin-top: 13%;
+}
+
 .ml-17px {
     margin-left: 17px;
 }
@@ -360,7 +472,43 @@
     margin-top: 20px;
 }
 
+.ml-10p {
+    margin-left: 10%;
+}
+
+.ml-7-5p {
+    margin-top: 7.5%;
+}
+
 /* padding */
+.pd-b-6px {
+    padding-bottom: 6px;
+}
+
+.pd-t-6px {
+    padding-top: 6px;
+}
+
+.pd-r-15px {
+    padding-right: 15px;
+}
+
+.pd-t-2px {
+    padding-top: 2px;
+}
+
+.pd-2-5px {
+    padding: 2.5px;
+}
+
+.pd-t-2p {
+    padding-top: 2%;
+}
+
+.pl-3p {
+    padding-left: 3%;
+}
+
 .px-10 {
     padding-left: 10px;
     padding-right: 10px;
@@ -371,17 +519,49 @@
     padding-bottom: 3px;
 }
 
+.pl-13px {
+    padding-left: 13px;
+}
+
+.pr-13px {
+    padding-right: 13px;
+}
+
+.pl-15p {
+    padding-left: 15%;
+}
+
 .pt-10 {
     padding-top: 10px;
+}
+
+.pt-5p {
+    padding-top: 5%;
+}
+
+.pl-7p {
+    padding-left: 7%;
 }
 
 .pl-5 {
     padding-left: 5px;
 }
 
+.pt-5px {
+    padding-top: 5px;
+}
+
 .pl-t-b-5 {
     padding-left: 5px;
     padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.pl-30p {
+    padding-left: 30%;
+}
+
+.pb-5px {
     padding-bottom: 5px;
 }
 
@@ -407,10 +587,6 @@
 
 .p-t-20px {
     padding-top: 20px;
-}
-
-.pt-2p {
-    padding-top: 2%;
 }
 
 .pt-9px {
@@ -510,6 +686,10 @@
     font-weight: bold;
 }
 
+.font-size-40 {
+    font-size: 40px;
+}
+
 .font-size-18 {
     font-size: 18px;
 }
@@ -599,4 +779,76 @@
 
 .brd-blue-2 {
     border: 2px solid #5256ff;
+}
+
+.back-blue-dark {
+    background-color: #151768;
+}
+.brd-blue-2px {
+    border: 2px solid #1b23a7;
+}
+
+.brd-light-red2px {
+    border: 2px solid #c68787;
+}
+
+/* big-practice */
+.big-practice-17 {
+    width: 100%;
+    height: 600px;
+    color: white;
+    background-color: #18134d;
+}
+
+
+
+/* colors */
+.text-yellow {
+    color: yellow;
+}
+
+.text-light-black {
+    color: #d2d2d2;
+}
+
+.text-blue {
+    color: #0400ff;
+}
+
+.rainbow {
+    background: linear-gradient(to right, rgb(230, 112, 112), rgb(240, 132, 132), rgb(190, 54, 240),rgb(170, 0, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+.back-light-red {
+    background: #ff7373;
+}
+
+.back-dark-blue2 {
+    background-color: #18134d;
+}
+
+.back-white {
+    background-color: white;
+}
+
+.text-black {
+    color: black;
+}
+
+.back-light-blue {
+    background-color: #c2e1ff;
+}
+
+/* box-shadow */
+.box-shadow-light-red {
+    box-shadow: 1px 0px 8px 1px #c47373;
+}
+
+/* position */
+.relative {
+    position: relative;
 }
