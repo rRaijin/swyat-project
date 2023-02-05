@@ -44,3 +44,10 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+/* override bootstrap */
+.container {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}

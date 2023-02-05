@@ -42,3 +42,7 @@ class ChertejPokupki {
 }
 
 const pokupka = new ChertejPokupki();
+
+const twigTest = {
+    name: 'abc'
+}
